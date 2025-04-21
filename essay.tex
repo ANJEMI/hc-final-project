@@ -90,23 +90,211 @@ profundamente la industria tecnológica y la cultura digital contemporánea.
 
 % Sección 2
 \section{Antecedentes} 
-- Contexto histórico de la computación antes de la
-aparición de Linux.\\ 
 
-% ¿Qué sistemas operativos dominaban el mercado antes de la llegada de Linux?
+\subsection{Sistemas Operativos antes de la llegada de Linux}
+A finales del siglo XX, el panorama de los sistemas operativos estaba marcado
+por una diversidad de plataformas que reflejaban tanto los avances tecnológicos
+como las limitaciones económicas y de acceso al software. Entre ellos, UNIX,
+lanzado en 1969, emergió como un pilar fundamental en entornos de alto
+rendimiento. Para inicios de los años noventa, se había consolidado como el
+sistema operativo dominante en supercomputadoras y servidores, siendo adoptado
+por gigantes tecnológicos como IBM, Sun y Apple. No obstante, su alto costo y la
+fragmentación en múltiples variantes —derivadas de la base de código de AT\&T
+(System V) y de la Universidad de California-Berkeley (BSD)— lo convertían en
+una opción inaccesible para la mayoría de los estudiantes y usuarios
+particulares.
 
-% ¿Cuál era el modelo de desarrollo de software predominante en esa época?
-% ¿Qué papel tenían las universidades y los gobiernos en el desarrollo de software?
-% ¿Qué limitaciones técnicas y filosóficas presentaban los sistemas propietarios
-% existentes?
-% ¿Cómo era la relación entre los usuarios y el software que
-% utilizaban?
+En paralelo, MS-DOS se convirtió en el estándar de facto en el mercado de
+computadoras personales. Al ser incluido en casi todas las máquinas compatibles
+con IBM, permitió a Microsoft alcanzar un dominio total en el mercado de
+sistemas operativos hacia 1991, precisamente el año en que Linus Torvalds
+publicó la primera versión de prueba del núcleo Linux. MS-DOS sirvió como el
+vínculo crucial entre el hardware y el software, en una era anterior al auge de
+las interfaces gráficas como Macintosh y Windows.
+
+Antes de esta hegemonía de Microsoft, otro sistema operativo había tenido un
+papel destacado: CP/M (Control Program for Microcomputers), desarrollado por
+Digital Research. Popular entre las máquinas de 8 bits, CP/M se instaló en
+millones de dispositivos, alcanzando un estimado de 200 millones de copias
+vendidas. Sin embargo, su protagonismo fue efímero frente al crecimiento
+explosivo de MS-DOS.
+
+Aunque su relevancia había disminuido con la llegada de las
+computadoras personales, los sistemas operativos de mainframe como OS/360 de
+IBM, así como BOS y TOS, tuvieron una importancia notable en décadas anteriores,
+especialmente en el ámbito corporativo y gubernamental, sentando muchas de las
+bases conceptuales que influenciarían generaciones posteriores de software.
+
+Para estudiantes y académicos, una alternativa fue MINIX, un sistema operativo
+de código fuente abierto diseñado con fines educativos por Andrew S. Tanenbaum.
+Fue precisamente utilizando MINIX en la Universidad de Helsinki que Linus
+Torvalds identificó sus limitaciones y decidió iniciar el desarrollo de su
+propio sistema operativo, con una arquitectura más robusta y eficiente. Su
+proyecto fue anunciado inicialmente en un grupo de discusión de MINIX, marcando
+el inicio de lo que se convertiría en uno de los mayores fenómenos del software
+libre.
 
 
-- El surgimiento del movimiento del software libre y de
-código abierto.\\ 
-- La trayectoria temprana de Linus Torvalds y su motivación
-para desarrollar Linux.
+\subsection{El desarrollo de software hasta el momento}
+
+Antes de la irrupción de Linux y el ascenso del movimiento de código abierto, el
+desarrollo de software se encontraba fuertemente arraigado en un modelo cerrado
+y comercial. El software propietario era la norma dominante: un sistema en el
+que las empresas o individuos mantenían el control exclusivo del código fuente,
+su distribución y su explotación económica. En esta lógica, el software era
+considerado un producto sujeto a propiedad intelectual, cuya protección era
+indispensable para asegurar su rentabilidad.
+
+Una de las características esenciales del software propietario era precisamente
+su naturaleza de código cerrado. Los usuarios podían adquirir licencias de uso,
+pero solo accedían a binarios o código objeto, sin posibilidad de revisar,
+modificar o adaptar el código fuente. Esta restricción limitaba tanto la
+comprensión profunda del software como la capacidad colectiva para mejorarlo o
+adaptarlo a nuevas necesidades.
+
+El modelo se sustentaba en un esquema de comercialización y licenciamiento.
+Empresas como Microsoft construyeron imperios bajo este enfoque, los sistemas
+como MS-DOS dominaban el mercado de computadoras personales. Incluso soluciones
+más potentes como UNIX, operaban bajo costosas licencias que reservaban el
+acceso y las modificaciones a una élite corporativa o académica con recursos
+suficientes.
+
+El desarrollo en este contexto era interno y centralizado. Los equipos de
+programación pertenecían a las propias empresas, y tanto la depuración como la
+mejora de los productos eran procesos controlados y frecuentemente lentos y
+costosos. La dependencia de recursos internos limitaba la velocidad de
+innovación, dificultando la respuesta ágil a los cambios del entorno
+tecnológico.
+
+Durante los años 60, la creciente complejidad de los proyectos llevó a lo que se
+conoció como la "crisis del software". Iniciativas como el sistema OS/360 de IBM
+expusieron las dificultades de gestionar proyectos a gran escala, lo que impulsó
+la búsqueda de metodologías más estructuradas para el desarrollo. Esta época
+también vio un auge en el diseño de nuevos lenguajes de programación, destinados
+a distintos nichos: COBOL y FORTRAN dominaron en la industria y la ciencia,
+mientras que BASIC, desarrollado en Dartmouth, encontró un lugar central en las
+primeras microcomputadoras. Pascal, introducido en 1971, se convirtió en un
+lenguaje clave en la educación formal de programación.
+
+Otro cambio técnico crucial de la época fue la introducción del `time-sharing´,
+que permitió compartir el poder computacional de grandes máquinas entre
+múltiples usuarios. Este paradigma impulsó el acceso a la computación en
+entornos académicos y favoreció la difusión de lenguajes como BASIC, que
+democratizaron el uso de la programación en los albores de la informática
+personal.
+
+En este entorno surgió UNIX, desarrollado en Bell Labs a partir de 1969. Su
+portabilidad, eficiencia y adecuación para el`time-sharin´ lo convirtieron en el
+sistema operativo preferido en universidades y centros de investigación, y más
+tarde en servidores y supercomputadoras. Sin embargo, su costo y el carácter
+cerrado de sus licencias lo mantuvieron alejado del usuario promedio.
+
+En contraste con esta hegemonía comercial y cerrada, comenzaban a emerger
+comunidades que compartían software libremente, como la del Laboratorio de
+Inteligencia Artificial del MIT. El desencanto con las restricciones del
+software propietario llevó a figuras como Richard Stallman a iniciar un
+movimiento en defensa de la libertad del usuario. En 1985 fundó la Free Software
+Foundation y lanzó el proyecto GNU, cuyo objetivo era construir un sistema
+operativo completamente libre, compatible con UNIX. Stallman consideraba el
+secretismo del código como un atentado contra el conocimiento colectivo.
+Paralelamente, iniciativas como la Berkeley Software Distribution (BSD) ofrecían
+versiones abiertas de UNIX, sentando precedentes fundamentales para el
+desarrollo posterior de Linux.
+
+\subsection{Las universidades y cuestiones filosóficas}
+Las universidades desempeñaron un papel crucial en el desarrollo del software,
+especialmente en sus inicios, donde profesores y estudiantes universitarios
+fueron actores clave en el movimiento del software libre. En la década de 1970,
+muchas universidades lideraban proyectos de programación y vendían sus
+resultados, adoptando políticas que promovían la publicación de software como
+libre bajo la licencia GPL. Por ejemplo, el laboratorio de programación de
+Harvard no permitía la instalación de programas cuyo código fuente no estuviera
+disponible públicamente. Además, los gobiernos financiaron proyectos de
+desarrollo de software, como el compilador GNU Ada, desarrollado por la
+Universidad de Nueva York con fondos de las Fuerzas Aéreas de EE. UU., con la
+condición de que el código se donara a la Free Software Foundation. Sin embargo,
+las políticas gubernamentales de control de exportaciones y leyes como la DMCA
+(Digital Millennium Copyright Act) podían restringir la distribución de software
+libre a nivel internacional.
+
+Los códigos fuente cerrados generaban frustración entre los usuarios, ya que les
+impedían aprender del software y corregir errores, así como adaptar el software
+a necesidades específicas. Un problema común de la época es que las instituciones,
+no podían modificar un software comercial por falta de acceso al código fuente,
+lo que resultaba en meses de trabajo innecesario. Además, la existencia de
+software propietario obstaculizaba la evolución natural del software, ya que
+obligaba a los desarrolladores a comenzar desde cero en lugar de modificar
+programas existentes. Esto también dificultaba el aprendizaje de nuevos
+programadores, quienes no podían estudiar el código fuente de programas
+complejos. En ese contexto, sistemas operativos como el Sistema Incompatible de
+Uso Compartido (ITS) del MIT, escritos en lenguaje Assembler, eran dependientes
+de arquitecturas específicas y se volvían obsoletos cuando estas dejaban de
+fabricarse. 
+
+Desde una perspectiva filosófica, el surgimiento del movimiento del software
+libre representó mucho más que una simple alternativa técnica: fue una postura
+ética frente a la estructura dominante del desarrollo informático. Tras décadas
+de hegemonía del software propietario, donde el conocimiento era celosamente
+guardado y la colaboración entre usuarios vista como una amenaza, emergió una
+crítica profunda al modelo que convertía el software en un bien cerrado y
+restrictivo. Richard Stallman y los primeros defensores del software libre
+denunciaban que ocultar el código fuente era no solo injusto, sino inmoral,
+llegando a calificarlo como un pecado y un crimen contra la humanidad". En este
+marco, el software libre no se trataba meramente de gratuidad, sino de libertad:
+libertad para estudiar, modificar, compartir y construir colectivamente. Frente
+a la narrativa empresarial que equiparaba compartir con piratería, el movimiento
+proponía una ética de cooperación, de empoderamiento del usuario y de
+construcción social del conocimiento. Rechazando el aislamiento al que condenaba
+el software propietario, esta filosofía rescataba la dimensión humana de la
+tecnología, defendiendo el derecho de las personas a controlar las herramientas
+que median su vida digital. Así, el software libre planteaba una alternativa
+civilizatoria: una tecnología al servicio de la libertad, no del control.
+
+\subsection{El usuario final}
+La relación entre el usuario final y el software, en el contexto del modelo
+propietario, fue marcada por la exclusión, la dependencia y la pasividad. En
+este modelo dominante antes de la irrupción del software libre, el usuario era
+un receptor pasivo del producto, sin derecho ni posibilidad de intervenir en su
+funcionamiento interno. El código cerrado —la práctica de distribuir software
+únicamente en forma de binarios ejecutables, sin acceso al código fuente—
+impidió que los usuarios comprendieran, adaptaran o mejoraran los programas que
+usaban. Esta opacidad no solo restringía el aprendizaje técnico, sino que
+reforzaba una barrera entre quien produce conocimiento tecnológico y quien
+simplemente lo consume.
+
+El usuario, por tanto, no era un colaborador ni un co-creador del software, sino
+un consumidor subordinado a las decisiones del proveedor. Las licencias de uso
+establecían los términos en los que se podía operar el software, negando
+explícitamente la redistribución, modificación o copia. Esta situación
+consolidaba una relación unidireccional, donde el proveedor centralizaba el
+poder técnico y comercial, y el usuario quedaba relegado a un rol de obediencia
+operativa. Incluso en casos en que el usuario —como una institución bancaria—
+requería una modificación funcional específica, la ausencia de acceso al código
+fuente lo condenaba a depender del proveedor o a incurrir en procesos costosos y
+prolongados.
+
+Además, la relación se caracterizaba por una fuerte dependencia técnica y
+económica: si surgía un error o necesidad, el usuario debía esperar a que el
+proveedor respondiera. Y si esa necesidad no era considerada rentable,
+simplemente se ignoraba. Esta lógica instrumental convirtió al software en una
+herramienta cerrada y rígida, en lugar de una plataforma adaptable o
+personalizable.
+
+Más profundamente, el modelo propietario fomentó una relación de alienación
+entre el usuario y el software: se utilizaba, pero no se comprendía; se confiaba
+en él, pero no se podía transformar. En este contexto, la figura del usuario
+como agente activo del conocimiento era anulada. Cualquier intento de compartir
+o adaptar software era estigmatizado como "piratería", borrando las nociones de
+solidaridad y cooperación que habían caracterizado los primeros entornos
+académicos de programación.
+
+Este escenario de restricciones, dependencia y exclusión fue el caldo de cultivo
+ideal para que un joven Linus Torvalds —frustrado por las limitaciones de los
+sistemas existentes como MINIX y motivado por una visión más abierta del
+desarrollo tecnológico— iniciara en 1991 el proyecto que daría origen a Linux.
+En un contexto dominado por el control propietario y la pasividad del usuario,
+su propuesta representó un giro radical hacia la colaboración, la transparencia
+y la libertad en el uso del software.
 
 % Sección 3
 \section{El Nacimiento y Evolución de Linux} 
@@ -162,7 +350,7 @@ tecnología.a
 \begin{thebibliography}{9}
 
 \bibitem{mochi_aleman_movimiento_2015}
-Mochi Alemán, Prudencio Óscar, \textit{El movimiento del software libre}, Revista Mexicana de Ciencias Políticas y Sociales, vol. 45, no. 185, 2015. URL: \url{http://www.revistas.unam.mx/index.php/rmcpys/article/view/48320}.
+Mochi Alemán, Prudencio Óscar, \textit{El movimiento del software libre}, Revista Mexicana de Ciencias Políticas y Sociales, vol. 45, no. 185, 2015.
 
 \bibitem{stallman_free_2002}
 Stallman, Richard y Stallman, Richard M., \textit{Free software, free society: selected essays}, 1st ed., Free Software Foundation, Boston, Mass, 2002. ISBN: 978-1-882114-98-6.
