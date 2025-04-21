@@ -319,13 +319,164 @@ rendimiento.\\
 - El impacto económico y social de Linux.
 
 % Sección 5
-\section{Linus Torvalds y el Desarrollo Colaborativo} 
-- El modelo de desarrollo
-de Linux y su influencia en la colaboración en línea.\\ 
-- El papel de Torvalds
-como líder y coordinador de la comunidad de Linux.\\ 
-- El impacto de Git en la
-gestión de versiones y la colaboración en proyectos de software.
+\section{Linus Torvalds y el Desarrollo Colaborativo}
+
+\subsection{Una nueva forma}
+
+Cómo hemos visto, Linux fue principalmente un proyecto personal de Linus Torvalds.
+Comenzó a trabajar en el kernel como un hobby, sin la intención de competir con
+sistemas comerciales como UNIX ni de desarrollar algo tan ambicioso como GNU. Su
+objetivo inicial era simplemente crear un sistema operativo funcional que
+pudiera utilizar en su propia computadora y, de paso, ayudar a otros
+estudiantes.
+
+Un aspecto fundamental de la organización inicial del proyecto fue su apertura
+al público desde el primer momento. Torvalds anunció su trabajo en un grupo de
+noticias del sistema operativo MINIX, invitando a otros usuarios a probar su
+sistema y a ofrecer comentarios. Esta transparencia y disposición a recibir
+retroalimentación contrastaban fuertemente con los modelos de desarrollo
+tradicionales, que solían mantenerse en secreto durante sus fases tempranas.
+
+Otro elemento clave fue la decisión de licenciar Linux bajo la GNU General
+Public License (GPL). Esta licencia permitía a cualquier persona usar, modificar
+y distribuir el código fuente de Linux de forma libre. Fue una decisión
+estratégica que atrajo a una comunidad creciente de desarrolladores, quienes
+comenzaron a colaborar en el proyecto de manera voluntaria y entusiasta,
+cimentando las bases del ecosistema de software libre que conocemos hoy.
+
+La organización del desarrollo en sí misma era inicialmente muy informal y sin
+una jerarquía estricta. No había una estructura de gestión tradicional con jefes
+supervisando a los desarrolladores. Cada miembro de la comunidad tenía derecho a
+voz y voto, y sus propuestas eran consideradas. Sin embargo, Linus Torvalds se
+mantuvo como la figura central, tomando las decisiones finales sobre qué se
+incluía, eliminaba o cambiaba en el núcleo/kernel. Esta figura de `general'
+surgió, según el propio Torvalds, para evitar conflictos y asegurar la
+eficiencia del desarrollo.  Con el tiempo, surgieron roles más definidos de
+manera orgánica dentro de la comunidad. Un "consejo de ancianos" se formó,
+compuesto por desarrolladores clave como Dave Miller, responsable de la calidad
+del código; Ted Ts'o, encargado de las relaciones públicas y la difusión de
+Linux; y Alan Cox, considerado la mano derecha de Torvalds para aspectos
+importantes de la estructura del núcleo.
+
+Podemos señalar además algunos contrastes con respecto a los modelos existentes:
+
+\begin{itemize}
+    \item \textbf{Desarrollo centralizado vs. desarrollo distribuido:} 
+        Los modelos tradicionales, como los utilizados por Microsoft en el
+        desarrollo de Windows, se basaban en pequeños equipos de programadores
+        internos que trabajaban en un código cerrado. Linux, en cambio, se
+        desarrolló de manera distribuida con la colaboración de cientos e
+        incluso miles de personas de todo el mundo.
+    \item \textbf{Motivación económica vs. motivación comunitaria:}  En los
+    modelos tradicionales, los desarrolladores generalmente trabajaban por una
+    recompensa económica directa. En el inicio de Linux, muchos contribuyeron
+    voluntariamente, motivados por el respeto de sus colegas y el deseo de
+    mejorar el software.
+    \item \textbf{Desarrollo planificado vs. desarrollo evolutivo:} Los modelos
+    tradicionales a menudo seguían un plan de desarrollo rígido, similar a un
+    proyecto de construcción. El desarrollo de Linux fue mucho más orgánico y
+    evolutivo, creciendo y mejorando gracias a las contribuciones de la comunidad.
+\end{itemize}
+
+Todos estos mecanismos permitieron programadores de todo el mundo colaboraran eficazmente en el proyecto Linux.
+
+\subsection{Linus, líder técnico y coordinador}
+Aunque el proyecto se caracterizó por su desarrollo distribuido y la
+colaboración de miles de programadores voluntarios de todo el mundo, Torvalds
+siempre mantuvo la autoridad final sobre el kernel de Linux.
+u profundo conocimiento del sistema le permitió dirigir su desarrollo y tomar
+decisiones técnicas cruciales. Incluso con el crecimiento masivo del proyecto,
+Torvalds se mantuvo como la única persona autorizada para fusionar las
+contribuciones al proyecto principal. Esto le permitía seleccionar las mejores
+ideas, decidir qué incluir, eliminar o modificar en el núcleo/kernel. 
+Aunque no existía una jerarquía estricta dentro de la comunidad, Torvalds se
+convirtió en la figura central en quien la comunidad confiaba más. Su estilo de
+liderazgo se describió como el de un `dictador benevolente', un término que
+sugiere que mantenía el control final para asegurar la coherencia y dirección
+del proyecto, pero lo hacía con el consenso y el respeto de la comunidad. Según
+el propio Torvalds, su método para gestionar el proyecto con cientos de miles de
+desarrolladores era esperar a que la gente se ofreciera voluntariamente para
+hacerse cargo de diferentes subsistemas, en lugar de delegar proactivamente.
+
+\subsection{Problemas con BitKeeper, el surgimiento de Git}
+
+A medida que más programadores se unían al proyecto Linux y comenzaban a
+contribuir con mejoras y correcciones, la tarea de revisar y gestionar todas
+estas aportaciones se volvió cada vez más compleja. En un principio, Linus
+Torvalds administraba el flujo de contribuciones principalmente a través del
+correo electrónico, lo cual funcionaba mientras el volumen de cambios era
+manejable. Sin embargo, con el crecimiento exponencial de la comunidad, se hizo
+evidente la necesidad de una herramienta más eficiente.
+
+La escala y la naturaleza distribuida del desarrollo del kernel de Linux exigían
+un sistema de control de versiones más robusto que los disponibles en ese
+momento.
+
+Antes de la creación de Git, los sistemas de control de versiones más utilizados
+eran mayoritariamente centralizados. Herramientas como Concurrent Versions
+System (CVS) y Subversion (SVN) dominaban el panorama, sustentadas en un modelo
+donde un único repositorio central albergaba todo el historial de cambios.
+Aunque estos sistemas funcionaban de forma aceptable en entornos de equipos
+pequeños o proyectos simples, se mostraban deficientes al escalar hacia
+proyectos complejos, distribuidos y de rápida evolución como el kernel de Linux.
+
+Los sistemas de control de versiones centralizados presentaban serias
+limitaciones: dependían de un único servidor (punto crítico de fallo), ofrecían
+bajo rendimiento en operaciones clave, complicaban la resolución de conflictos
+entre desarrolladores y no permitían trabajar sin conexión. Estas deficiencias
+resultaron inviables para proyectos complejos y distribuidos como el kernel de
+Linux, que requerían una infraestructura más ágil, descentralizada y robusta.
+
+Antes de 2002, Linus Torvalds no utilizaba ninguna herramienta formal de control
+de versiones (SCM) para el desarrollo del kernel de Linux. Aunque existían
+opciones como CVS y Subversion, decidió no adoptarlas debido a sus limitaciones.
+Sin embargo, a medida que el proyecto crecía y se volvía
+más complejo, la comunidad de desarrolladores del kernel insistía en la
+necesidad de una herramienta que facilitara la gestión del código.
+
+Es por esto que, en 2002, surge la alianza con BitKeeper, una alternativa descentralizada
+aunque de código propietario, que permitía a cada desarrollador tener una copia
+completa del historial del proyecto y trabajar de forma local, mejorando
+significativamente la eficiencia y autonomía del equipo, aunque a costa de
+depender de una herramienta cerrada cuya licencia gratuita resultaría temporal y
+conflictiva.
+
+Desde el punto de vista tecnológico, BitKeeper era una herramienta ideal para el
+desarrollo del kernel de Linux: distribuida, rápida y eficiente. Sin embargo, no
+era software libre, lo que generó fuertes tensiones dentro de la comunidad.
+Aunque Linus Torvalds valoraba su funcionalidad y había decidido adoptarlo,
+enfrentó una creciente oposición por parte del núcleo del equipo del kernel, que
+rechazaba depender de una herramienta propietaria.
+
+Sin embargo, la relación entre la comunidad del software libre y BitMover era
+tensa desde el inicio, ya que BitKeeper era un software propietario. Aunque
+ofrecía licencias gratuitas para uso no comercial en proyectos de código
+abierto, esta concesión era frágil. En 2005, tras una serie de desacuerdos,
+BitMover decidió retirar el acceso libre a BitKeeper para los desarrolladores
+del kernel de Linux. Este evento dejó a la comunidad sin una herramienta viable
+para gestionar el desarrollo del proyecto.
+
+Ante la retirada de la licencia gratuita por parte de BitMover y la presión
+interna, Torvalds —a pesar de no querer realmente hacerlo— tomó la decisión de
+crear su propia herramienta. En apenas dos semanas, desarrolló y lanzó Git, al
+que describió con humor como “el estúpido rastreador de contenidos” (“the stupid
+content tracker”), destacando su enfoque pragmático, minimalista y
+descentralizado, en contraposición a las soluciones complejas y cerradas que
+había conocido hasta entonces.
+
+Fue en este contexto que Linus Torvalds diseñó y creó Git, un sistema de control
+de versiones distribuido, rápido, escalable y completamente libre. Git no solo
+solucionaba los problemas que habían afectado al desarrollo del kernel durante
+años, sino que también establecía un nuevo estándar técnico y filosófico para la
+colaboración en línea. Su arquitectura descentralizada, su manejo eficiente de
+ramas y fusiones, y su integración fluida con el trabajo colaborativo hicieron
+que Git se convirtiera rápidamente en el pilar de la infraestructura de
+desarrollo moderno.
+
+
+\subsection{La adoptación masiva de Git}
+
+
 
 % Sección 6
 \section{La Filosofía del Código Abierto y su Difusión} 
