@@ -5,6 +5,7 @@
 \usepackage{graphicx}
 \usepackage{tocbibind}
 \usepackage{hyperref}
+\usepackage{todonotes}
 % \usepackage{cite}
 
 % \title{Linus Torvalds y el desarrollo de Linux}
@@ -62,6 +63,9 @@
 
 % Sección 1
 \section{Introducción} 
+
+%todo: Todas las citas de que alguien dijo algo ponerlas en negrita, italica y en un lugar aparte
+%todo: en el 3.5 y 3.6 hacer la citacion de las empresas mencionadas
 
 En la vasta cronología de la historia de la computación, pocos nombres han
 dejado una huella tan profunda y duradera como el de Linus Torvalds. Reconocido
@@ -313,7 +317,7 @@ era accesible, prohibía modificaciones fuera del ámbito educativo llevándolo 
 escribir sus propios programas desde cero, prescindiendo incluso del sistema
 operativo.
 
-Sus primeros experimentos fueron programados en ensamblador, logrando arrancar
+Sus primeros experimentos fueron programados en \todo{citar}ensamblador, logrando arrancar
 la máquina desde un disquete y ejecutar dos procesos, uno para la entrada desde
 el teclado y otro para la salida del módem, en sus propias palabras esto era ``un
 juego de prueba para entender cómo interactuar con el hardware". El siguiente
@@ -324,13 +328,13 @@ construyendo algo más grande que un solo emulador, estaba creando las bases de
 un sistema operativo.
 
 El 25 de agosto de 1991, Torlvads anunció su proyecto en un grupo del sistema
-operativo MINIX y un mes después, subía al servidor FPT de la universidad la
+operativo MINIX y un mes después, subía al servidor \todo{citar}FTP de la universidad la
 versión 0.01 de Linux: 10 000 líneas de código que incluían un shell básico, el
-compilador GCC y herramientas para gestionar procesos y memoria, invitando de
+compilador \todo{citar}GCC y herramientas para gestionar procesos y memoria, invitando de
 esta manera a la comunidad de usuarios de MINIX a probar, criticar y aportar
 sugerencias. Aunque limitado, este lanzamiento sentó las bases de un modelo de
 desarrollo revolucionario, sobre su decisión de compartir el código de forma
-abierta Torlavds dijo: ``Si hubiera hecho Linux de pago, nadie lo habría
+abierta Torlavds dijo:\todo{citar} ``Si hubiera hecho Linux de pago, nadie lo habría
 adoptado. Sin contribuciones externas, el proyecto habría muerto en meses".
 
 Este enfoque colaborativo, combinado con la arquitectura modular inspirada en
@@ -352,19 +356,19 @@ UNIX que adoptó:
     \item \textbf{Todo es un archivo}: dispositivos, procesos y datos se
     gestionaban como archivos, simplificando la interoperabilidad.     
     \item \textbf{Cada herramienta hace una sola cosa y la hace bien}:
-    modularidad que permitía combinar componentes sin redundancia.
+    esta modularidad permitía combinar componentes sin redundancia.
 \end{itemize}
 Ante el torrente de contribuidores, organizados en listas de correo y servidores
 FTP, se estableció una estructura flexible:
 \begin{itemize}
-    \item \textbf{Linus Torvalds}: ``el General", revisa y acepta los parches que
+    \item \textbf{Linus Torvalds}: ``el General", revisaría y aceptaría los parches que
     cumplen los estándares de calidad y coherencia arquitectónica. 
-    \item \textbf{Dave Miller}: responsable de la calidad, descarta correcciones
-    innecesarias y envía a Linus solo las más pulidas.  
-    \item \textbf{Ted Ts’o}: principal promotor, se encarga de las relaciones
+    \item \textbf{Dave Miller}: responsable de la calidad, descartaría correcciones
+    innecesarias y envíaría a Linus solo las más pulidas.  
+    \item \textbf{Ted Ts’o}: principal promotor, se encargaría de las relaciones
     públicas y la difusión en conferencias y empresas.  
-    \item \textbf{Alan Cox}: mano derecha de Linus, coordina grandes bloques de
-    funcionalidades y gestiona la estructura interna del núcleo.
+    \item \textbf{Alan Cox}: mano derecha de Linus, coordinaría grandes bloques de
+    funcionalidades y gestionaría la estructura interna del núcleo.
 \end{itemize} 
 
 Esta gobernanza plana garantizó que cada desarrollador tuviera voz, pero siempre
@@ -376,15 +380,15 @@ implementaba", explicó Alan Cox.
 \subsection{El papel de la Licencia Pública General de GNU en la expansión de Linux}
 
 En enero de 1992, Linux adoptó la Licencia Pública General de GNU (GPLv2), un
-paso clave que aseguraba el copyleft: todo derivado debía permanecer libre y
+paso clave que aseguraba el \todo{citar}copyleft: todo derivado debía permanecer libre y
 promover las mismas libertades de uso, estudio, modificación y redistribución. 
-Esta decisión, alineada con el proyecto GNU de Richard Stallman, generó un
+Esta decisión, alineada con el proyecto GNU de \todo{first Stallman citar} Richard Stallman, generó un
 entorno de confianza para empresas y particulares, al impedir que versiones
 privativas del kernel excluyeran a la comunidad.
 
 Bajo la protección de la GPL surgieron decenas de distribuciones orientadas a
-distintos públicos y casos de uso: Slackware, Debian, Red Hat, SUSE y muchas más
-ofrecían instaladores “todo en uno”, con sistemas de paquetes, utilidades de
+distintos públicos y casos de uso: \todo{citar}Slackware, Debian, Red Hat, SUSE y muchas más
+ofrecían instaladores ``todo en uno”, con sistemas de paquetes, utilidades de
 administración y repositorios. Cada distribución integraba Linux en un
 ecosistema completo, facilitando su adopción en universidades, empresas y
 hogares.
@@ -743,6 +747,7 @@ cultura de compartición y mejora continua.
 
 % Sección 7
 \section{Conclusiones}
+%todo generar con gpt
 
 - Resumen de las contribuciones clave de Linus Torvalds.\\ 
 
@@ -753,6 +758,7 @@ tecnología.a
 \newpage
 
 \begin{thebibliography}{9}
+%todo cambiar a Bibliografia
 
 \bibitem{mochi_aleman_movimiento_2015}
 Mochi Alemán, Prudencio Óscar, \textit{El movimiento del software libre}, Revista Mexicana de Ciencias Políticas y Sociales, vol. 45, no. 185, 2015.
