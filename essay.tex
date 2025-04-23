@@ -167,7 +167,7 @@ innovación, dificultando la respuesta ágil a los cambios del entorno
 tecnológico.
 
 Durante los años 60, la creciente complejidad de los proyectos llevó a lo que se
-conoció como la "crisis del software". Iniciativas como el sistema OS/360 de IBM
+conoció como la ``crisis del software". Iniciativas como el sistema OS/360 de IBM
 expusieron las dificultades de gestionar proyectos a gran escala, lo que impulsó
 la búsqueda de metodologías más estructuradas para el desarrollo. Esta época
 también vio un auge en el diseño de nuevos lenguajes de programación, destinados
@@ -284,7 +284,7 @@ Más profundamente, el modelo propietario fomentó una relación de alienación
 entre el usuario y el software: se utilizaba, pero no se comprendía; se confiaba
 en él, pero no se podía transformar. En este contexto, la figura del usuario
 como agente activo del conocimiento era anulada. Cualquier intento de compartir
-o adaptar software era estigmatizado como "piratería", borrando las nociones de
+o adaptar software era estigmatizado como ``piratería", borrando las nociones de
 solidaridad y cooperación que habían caracterizado los primeros entornos
 académicos de programación.
 
@@ -302,177 +302,209 @@ y la libertad en el uso del software.
 
 \subsection{El desarrollo inicial de Linux como proyecto personal}
 
-El surgimiento de Linux está marcado no solo por la curiosidad técnica de Linus Torvalds, 
-sino también por sacrificios económicos y una tenacidad poco común. En 1991, mientras cursaba 
-Ciencia de la Computación en la Universidad de Helsinki, Torvalds invirtió 3500 dólares, 
-una suma considerable para un estudiante finlandés de la época, en adquirir un ordenador con 
-procesador Intel 80386 a 33 MHz y 4 MB de RAM. Planteaba que era una máquina poderosa, pero MINIX, 
-el sistema operativo que usaba, no aprovechaba su potencial y, aunque cuyo código era accesible, 
-prohibía modificaciones fuera del ámbito educativo llevándolo a escribir sus propios programas desde cero, 
-prescindiendo incluso del sistema operativo.
+El surgimiento de Linux está marcado no solo por la curiosidad técnica de Linus
+Torvalds, sino también por sacrificios económicos y una tenacidad poco común. En
+1991, mientras cursaba Ciencia de la Computación en la Universidad de Helsinki,
+Torvalds invirtió 3500 dólares, una suma considerable para un estudiante
+finlandés de la época, en adquirir un ordenador con procesador Intel 80386 a 33
+MHz y 4 MB de RAM. Planteaba que era una máquina poderosa, pero MINIX, el
+sistema operativo que usaba, no aprovechaba su potencial y, aunque cuyo código
+era accesible, prohibía modificaciones fuera del ámbito educativo llevándolo a
+escribir sus propios programas desde cero, prescindiendo incluso del sistema
+operativo.
 
-Sus primeros experimentos fueron programados en ensamblador, logrando arrancar la máquina desde un disquete y 
-ejecutar dos procesos, uno para la entrada desde el teclado y otro para la salida del módem, en sus propias 
-palabras esto era "un juego de prueba para entender cómo interactuar con el hardware". El siguiente desafío 
-surgió cuando intentó descargar archivos de la universidad, necesitaba un controlador de disco compatible con 
-el sistema de archivos de MINIX. Tras semanas de trabajo logró un driver funcional dándose cuenta de que estaba 
-construyendo algo más grande que un solo emulador, estaba creando las bases de un sistema operativo.
+Sus primeros experimentos fueron programados en ensamblador, logrando arrancar
+la máquina desde un disquete y ejecutar dos procesos, uno para la entrada desde
+el teclado y otro para la salida del módem, en sus propias palabras esto era ``un
+juego de prueba para entender cómo interactuar con el hardware". El siguiente
+desafío surgió cuando intentó descargar archivos de la universidad, necesitaba
+un controlador de disco compatible con el sistema de archivos de MINIX. Tras
+semanas de trabajo logró un driver funcional dándose cuenta de que estaba 
+construyendo algo más grande que un solo emulador, estaba creando las bases de
+un sistema operativo.
 
-El 25 de agosto de 1991, Torlvads anunció su proyecto en un grupo del sistema operativo MINIX y un mes después, 
-subía al servidor FPT de la universidad 
-la versión 0.01 de Linux: 10 000 líneas de código que incluían un shell básico, el compilador GCC y herramientas 
-para gestionar procesos y memoria, invitando de esta manera a la comunidad de usuarios de MINIX a probar, criticar 
-y aportar sugerencias. Aunque limitado, este lanzamiento sentó las bases de un modelo de desarrollo 
-revolucionario, sobre su decisión de compartir el código de forma abierta Torlavds dijo: "Si hubiera hecho Linux 
-de pago, nadie lo habría adoptado. Sin contribuciones externas, el proyecto habría muerto en meses".
+El 25 de agosto de 1991, Torlvads anunció su proyecto en un grupo del sistema
+operativo MINIX y un mes después, subía al servidor FPT de la universidad la
+versión 0.01 de Linux: 10 000 líneas de código que incluían un shell básico, el
+compilador GCC y herramientas para gestionar procesos y memoria, invitando de
+esta manera a la comunidad de usuarios de MINIX a probar, criticar y aportar
+sugerencias. Aunque limitado, este lanzamiento sentó las bases de un modelo de
+desarrollo revolucionario, sobre su decisión de compartir el código de forma
+abierta Torlavds dijo: ``Si hubiera hecho Linux de pago, nadie lo habría
+adoptado. Sin contribuciones externas, el proyecto habría muerto en meses".
 
-Este enfoque colaborativo, combinado con la arquitectura modular inspirada en UNIX, permitió que Linux 
-evolucionara a velocidad exponencial. Para diciembre de 1991, una comunidad incipiente ya había aportado 
-controladores para tarjetas de vídeo y soporte inicial de redes, transformando lo que comenzó como un 
-hobby en el embrión de un sistema operativo global.
+Este enfoque colaborativo, combinado con la arquitectura modular inspirada en
+UNIX, permitió que Linux evolucionara a velocidad exponencial. Para diciembre de
+1991, una comunidad incipiente ya había aportado controladores para tarjetas de
+vídeo y soporte inicial de redes, transformando lo que comenzó como un hobby en
+el embrión de un sistema operativo global.
 
 \subsection{La transición de Linux a un proyecto colaborativo}
 
-El modelo de desarrollo de Torvalds, basado en meritocracia técnica y transparencia, desafió 
-las jerarquías corporativas. Linus evaluaba parches enviados por una comunidad creciente, que 
-incluía desde estudiantes hasta ingenieros de empresas como IBM. En 1994, con el lanzamiento 
-de Linux 1.0, la primera versión estable, el sistema demostró ser viable comercialmente. Torvalds 
-presentó esta versión en la Universidad de Helsinki, destacando dos principios UNIX que adoptó:
+El modelo de desarrollo de Torvalds, basado en meritocracia técnica y
+transparencia, desafió las jerarquías corporativas. Linus evaluaba parches
+enviados por una comunidad creciente, que incluía desde estudiantes hasta
+ingenieros de empresas como IBM. En 1994, con el lanzamiento de Linux 1.0, la
+primera versión estable, el sistema demostró ser viable comercialmente. Torvalds
+presentó esta versión en la Universidad de Helsinki, destacando dos principios
+UNIX que adoptó:
 \begin{itemize}
-    \item \textbf{Todo es un archivo}: dispositivos, procesos y datos se gestionaban como archivos, 
-    simplificando la interoperabilidad.     
-    \item \textbf{Cada herramienta hace una sola cosa y la hace bien}: modularidad 
-    que permitía combinar componentes sin redundancia.
+    \item \textbf{Todo es un archivo}: dispositivos, procesos y datos se
+    gestionaban como archivos, simplificando la interoperabilidad.     
+    \item \textbf{Cada herramienta hace una sola cosa y la hace bien}:
+    modularidad que permitía combinar componentes sin redundancia.
 \end{itemize}
-Ante el torrente de contribuidores, organizados en listas de correo y servidores FTP, se estableció una 
-estructura flexible:
+Ante el torrente de contribuidores, organizados en listas de correo y servidores
+FTP, se estableció una estructura flexible:
 \begin{itemize}
-    \item \textbf{Linus Torvalds}: "el General", revisa y acepta los parches que cumplen los 
-    estándares de calidad y coherencia arquitectónica.
-    \item \textbf{Dave Miller}: responsable de la calidad, descarta correcciones innecesarias 
-    y envía a Linus solo las más pulidas.
-    \item \textbf{Ted Ts’o}: principal promotor, se encarga de las relaciones públicas y la 
-    difusión en conferencias y empresas.
-    \item \textbf{Alan Cox}: mano derecha de Linus, coordina grandes bloques de 
+    \item \textbf{Linus Torvalds}: ``el General", revisa y acepta los parches que
+    cumplen los estándares de calidad y coherencia arquitectónica. 
+    \item \textbf{Dave Miller}: responsable de la calidad, descarta correcciones
+    innecesarias y envía a Linus solo las más pulidas.  
+    \item \textbf{Ted Ts’o}: principal promotor, se encarga de las relaciones
+    públicas y la difusión en conferencias y empresas.  
+    \item \textbf{Alan Cox}: mano derecha de Linus, coordina grandes bloques de
     funcionalidades y gestiona la estructura interna del núcleo.
 \end{itemize} 
 
-Esta gobernanza plana garantizó que cada desarrollador tuviera voz, pero siempre bajo la garantía 
-de que Torvalds y su equipo tomarían la decisión final. 
-"No queríamos guerras de ego; si alguien proponía una mejora válida, se implementaba", explicó Alan Cox.
+Esta gobernanza plana garantizó que cada desarrollador tuviera voz, pero siempre
+bajo la garantía de que Torvalds y su equipo tomarían la decisión final.  ``No
+queríamos guerras de ego; si alguien proponía una mejora válida, se
+implementaba", explicó Alan Cox.
 
 \newpage
 \subsection{El papel de la Licencia Pública General de GNU en la expansión de Linux}
 
-En enero de 1992, Linux adoptó la Licencia Pública General de GNU (GPLv2), 
-un paso clave que aseguraba el copyleft: todo derivado debía permanecer libre 
-y promover las mismas libertades de uso, estudio, modificación y redistribución. 
-Esta decisión, alineada con el proyecto GNU de Richard Stallman, generó un entorno 
-de confianza para empresas y particulares, al impedir que versiones privativas 
-del kernel excluyeran a la comunidad.
+En enero de 1992, Linux adoptó la Licencia Pública General de GNU (GPLv2), un
+paso clave que aseguraba el copyleft: todo derivado debía permanecer libre y
+promover las mismas libertades de uso, estudio, modificación y redistribución. 
+Esta decisión, alineada con el proyecto GNU de Richard Stallman, generó un
+entorno de confianza para empresas y particulares, al impedir que versiones
+privativas del kernel excluyeran a la comunidad.
 
-Bajo la protección de la GPL surgieron decenas de distribuciones orientadas 
-a distintos públicos y casos de uso: Slackware, Debian, Red Hat, SUSE y 
-muchas más ofrecían instaladores “todo en uno”, con sistemas de paquetes, 
-utilidades de administración y repositorios. Cada distribución integraba 
-Linux en un ecosistema completo, facilitando su adopción en universidades, empresas y hogares.
+Bajo la protección de la GPL surgieron decenas de distribuciones orientadas a
+distintos públicos y casos de uso: Slackware, Debian, Red Hat, SUSE y muchas más
+ofrecían instaladores “todo en uno”, con sistemas de paquetes, utilidades de
+administración y repositorios. Cada distribución integraba Linux en un
+ecosistema completo, facilitando su adopción en universidades, empresas y
+hogares.
 
 Además, la obligación de redistribuir las modificaciones bajo la misma licencia 
-generó un efecto de red: cuanto más colaboraban los desarrolladores, más atractivo 
-resultaba el conjunto de herramientas y bibliotecas disponibles, acelerando el 
-ciclo de innovación y asegurando que los avances se reciclaran a favor de toda la comunidad.
+generó un efecto de red: cuanto más colaboraban los desarrolladores, más
+atractivo resultaba el conjunto de herramientas y bibliotecas disponibles,
+acelerando el ciclo de innovación y asegurando que los avances se reciclaran a
+favor de toda la comunidad.
 
 
 \subsection{La evolución de Linux y su adopción en servidores e infraestructura de Internet}
 
-Con el lanzamiento de Linux 1.0 la compatibilidad entre diferentes entornos de hardware mejoró, 
-leer un disquete o mostrar en pantalla datos generados en otros sistema dejó de ser un reto 
-gracias a la modularidad de los controladores y la estandarización de interfaces. Millones de personas 
-lo descargaban, demostrando cada segundo, y de forma tangible, un postulado antes no tan obvio para los 
-usuarios y programadores: Open Source podía ser más rentable y atractivo que el modelo de negocio 
-empleado por otras compañías como Microsoft.
+Con el lanzamiento de Linux 1.0 la compatibilidad entre diferentes entornos de
+hardware mejoró, leer un disquete o mostrar en pantalla datos generados en otros
+sistema dejó de ser un reto gracias a la modularidad de los controladores y la
+estandarización de interfaces. Millones de personas lo descargaban, demostrando
+cada segundo, y de forma tangible, un postulado antes no tan obvio para los 
+usuarios y programadores: Open Source podía ser más rentable y atractivo que el
+modelo de negocio empleado por otras compañías como Microsoft.
 
-A finales de los 2000, Linux se impuso en el mercado de servidores gracias al stack LAMP (Linux, Apache, MySQL, PHP/Python/Perl) 
-y al coste cero en licencias. Grandes compañías web y proveedores de hosting pusieron sus centros de datos, y luego sus nubes, 
-sobre Linux. Para 2008 más del 60\% de los servidores en producción funcionaban con núcleo Linux, y desde 
-2018 todos los equipos del TOP500 en supercomputación lo utilizan, aprovechando su escalabilidad y la 
+A finales de los 2000, Linux se impuso en el mercado de servidores gracias al
+stack LAMP (Linux, Apache, MySQL, PHP/Python/Perl) y al coste cero en licencias.
+Grandes compañías web y proveedores de hosting pusieron sus centros de datos, y
+luego sus nubes, sobre Linux. Para 2008 más del 60\% de los servidores en
+producción funcionaban con núcleo Linux, y desde 2018 todos los equipos del
+TOP500 en supercomputación lo utilizan, aprovechando su escalabilidad y la 
 capacidad de tunear el kernel para arquitecturas masivamente paralelas.
 
-Con el tiempo incluso grandes empresas como Oracle, Netscape, Corel e Intel, empezaron a prestar 
-atención a las nuevas tendencias, y cada vez más a menudo consideraban a Linux como una alternativa 
-real a Windows. Por ejemplo, IBM destinó alrededor de mil millones de dólares a la mejora adicional 
-de Linux y, desde entonces, ha seguido siendo uno de sus principales “embajadores”.
+Con el tiempo incluso grandes empresas como Oracle, Netscape, Corel e Intel,
+empezaron a prestar atención a las nuevas tendencias, y cada vez más a menudo
+consideraban a Linux como una alternativa real a Windows. Por ejemplo, IBM
+destinó alrededor de mil millones de dólares a la mejora adicional de Linux y,
+desde entonces, ha seguido siendo uno de sus principales “embajadores”.
 
-El éxito de Torvalds también sirvió de inspiración a otros, como la empresa Android, fundada 
-en 2003 por Andy Ruben, Richie Miner, Nick Sears y Chris White. Tomando como base el núcleo de Linux, 
-lo modificaron ligeramente y obtuvieron un nuevo sistema operativo para dispositivos móviles, 
-que tiene en cuenta la geolocalización y la configuración personal de sus propietarios. Unos años 
-después Google compró Android llevando el kernel no solo al bolsillo de más de 3000 millones de 
-usuarios, sino que amplió su presencia a tablets, televisores, relojes inteligentes, entre otros 
-dispositivos. Paralelamente, proyectos como BusyBox, U-Boot, OpenWrt y Tizen demostraron la 
-versatilidad de Linux en dispositivos con recursos limitados, desde routers domésticos hasta 
+El éxito de Torvalds también sirvió de inspiración a otros, como la empresa
+Android, fundada en 2003 por Andy Ruben, Richie Miner, Nick Sears y Chris White.
+Tomando como base el núcleo de Linux, lo modificaron ligeramente y obtuvieron un
+nuevo sistema operativo para dispositivos móviles, que tiene en cuenta la
+geolocalización y la configuración personal de sus propietarios. Unos años 
+después Google compró Android llevando el kernel no solo al bolsillo de más de
+3000 millones de usuarios, sino que amplió su presencia a tablets, televisores,
+relojes inteligentes, entre otros dispositivos. Paralelamente, proyectos como
+BusyBox, U-Boot, OpenWrt y Tizen demostraron la versatilidad de Linux en
+dispositivos con recursos limitados, desde routers domésticos hasta 
 electrodomésticos conectados y maquinaria industrial.
 
-Linux, por su parte, también siguió prosperando. En 2014, su distribución más popular, Ubuntu, informó 
-que 22 millones de usuarios la utilizaban. Otras distribuciones populares son Arch, orientada a usuarios 
-avanzados; Manjaro, basada en Arch pero más amigable con el usuario y Debian, considerada la 
-distribución madre al ser una de las primeras y base de infinidad de distribuciones. 
+Linux, por su parte, también siguió prosperando. En 2014, su distribución más
+popular, Ubuntu, informó que 22 millones de usuarios la utilizaban. Otras
+distribuciones populares son Arch, orientada a usuarios avanzados; Manjaro,
+basada en Arch pero más amigable con el usuario y Debian, considerada la 
+distribución madre al ser una de las primeras y base de infinidad de
+distribuciones. 
 
-Actualmente Linux es respaldado por la mayoría de las grandes empresas del sector, las que colaboran 
-con su difusión ya sea trabajando en el núcleo, proporcionando soluciones de software o 
-preinstalando el sistema operativo, algunas de ellas son: Intel, Google, IBM, AMD, Valve, Dell, Lenovo, 
-Asus, Fujitsu, Oracle, entre muchas otras. De igual manera el apoyo de compañías de software también 
-está presente, ya que, entre otras aplicaciones Java, Google Earth, Adobe Reader, Adobe Flash y Yahoo! Messenger 
-están disponibles para Linux. 
-\subsection{El impacto económico de Linux}
+Actualmente Linux es respaldado por la mayoría de las grandes empresas del
+sector, las que colaboran con su difusión ya sea trabajando en el núcleo,
+proporcionando soluciones de software o preinstalando el sistema operativo,
+algunas de ellas son: Intel, Google, IBM, AMD, Valve, Dell, Lenovo, Asus,
+Fujitsu, Oracle, entre muchas otras. De igual manera el apoyo de compañías de
+software también está presente, ya que, entre otras aplicaciones Java, Google
+Earth, Adobe Reader, Adobe Flash y Yahoo! Messenger están disponibles para
+Linux.  \subsection{El impacto económico de Linux}
 
-Linux logró la combinación perfecta, grandes reducciones de gastos a las empresas de software y cuantiosas 
-ganancias a los desarrolladores, los cuales podían vender servicios de configuración de servidores 
-para empresas, así como ayudar a mantener su funcionamiento. 
+Linux logró la combinación perfecta, grandes reducciones de gastos a las
+empresas de software y cuantiosas ganancias a los desarrolladores, los cuales
+podían vender servicios de configuración de servidores para empresas, así como
+ayudar a mantener su funcionamiento. 
 
-Plataformas como Amazon Web Services (AWS), lanzada en 2006, se construyeron sobre Linux, permitiendo a 
-startups acceder a infraestructura escalable a una fracción del costo tradicional. Compañías como Red Hat y 
-Canonical, creadora de Ubuntu, demostraron que el software libre podía ser rentable. Red Hat facturó miles 
-de millones ofreciendo soporte técnico y certificaciones, no el código en sí. Este modelo inspiró a otras 
-empresas, como Docker, que monetizaron servicios en lugar de licencias.
+Plataformas como Amazon Web Services (AWS), lanzada en 2006, se construyeron
+sobre Linux, permitiendo a startups acceder a infraestructura escalable a una
+fracción del costo tradicional. Compañías como Red Hat y Canonical, creadora de
+Ubuntu, demostraron que el software libre podía ser rentable. Red Hat facturó
+miles de millones ofreciendo soporte técnico y certificaciones, no el código en
+sí. Este modelo inspiró a otras empresas, como Docker, que monetizaron servicios
+en lugar de licencias.
 
-Linux también influyó en la innovación en hardware y el Internet de las Cosas (IoT), permitiendo el 
-auge de dispositivos embebidos de bajo costo. Raspberry Pi (2012), una computadora de 35 dólares con 
-Linux, se convirtió en herramienta educativa y prototipado industrial. De igual manera empresas como 
-Tesla integraron Linux en sus sistemas de infoentretenimiento, reduciendo dependencia de proveedores 
-externos. 
+Linux también influyó en la innovación en hardware y el Internet de las Cosas
+(IoT), permitiendo el auge de dispositivos embebidos de bajo costo. Raspberry Pi
+(2012), una computadora de 35 dólares con Linux, se convirtió en herramienta
+educativa y prototipado industrial. De igual manera empresas como Tesla
+integraron Linux en sus sistemas de infoentretenimiento, reduciendo dependencia
+de proveedores externos. 
 
 \subsection{El impacto social de Linux}
 
-Linux ha supuesto una auténtica democratización del acceso a la tecnología. Al ser gratuito 
-y funcionar en hardware modesto, ha permitido que comunidades con recursos limitados monten 
-laboratorios de informática en escuelas rurales o centros comunitarios, usando desde equipos 
-reciclados hasta plataformas de bajo coste. Proyectos educativos offline basados en Linux, 
-llevan contenidos formativos a regiones sin conectividad, reduciendo la brecha digital y 
+Linux ha supuesto una auténtica democratización del acceso a la tecnología. Al
+ser gratuito y funcionar en hardware modesto, ha permitido que comunidades con
+recursos limitados monten laboratorios de informática en escuelas rurales o
+centros comunitarios, usando desde equipos reciclados hasta plataformas de bajo
+coste. Proyectos educativos offline basados en Linux, llevan contenidos
+formativos a regiones sin conectividad, reduciendo la brecha digital y 
 fomentando la autoformación.
 
-Más allá del acceso al software, Linux ha cristalizado una cultura de colaboración global. 
-Eventos como FOSDEM, organizados por y para desarrolladores voluntarios, reúnen cada año a 
-miles de asistentes en un espacio de aprendizaje abierto y gratuito. A su vez, grupos locales 
-de usuarios, hackathons y conferencias regionales refuerzan el espíritu de solidaridad técnica: 
-todos contribuyen, todos se benefician.
+Más allá del acceso al software, Linux ha cristalizado una cultura de
+colaboración global.  Eventos como FOSDEM, organizados por y para
+desarrolladores voluntarios, reúnen cada año a miles de asistentes en un espacio
+de aprendizaje abierto y gratuito. A su vez, grupos locales de usuarios,
+hackathons y conferencias regionales refuerzan el espíritu de solidaridad
+técnica: todos contribuyen, todos se benefician.
 
-En el ámbito académico, Linux y las herramientas asociadas se han incorporado como pilares de 
-la enseñanza en sistemas operativos, redes y desarrollo de software colaborativo. Universidades 
-de todo el mundo incluyen cursos y certificaciones en sus planes de estudio, asegurando que las 
-nuevas generaciones dominen no solo el uso, sino también la filosofía del software libre.
+En el ámbito académico, Linux y las herramientas asociadas se han incorporado
+como pilares de la enseñanza en sistemas operativos, redes y desarrollo de
+software colaborativo. Universidades de todo el mundo incluyen cursos y
+certificaciones en sus planes de estudio, asegurando que las nuevas generaciones
+dominen no solo el uso, sino también la filosofía del software libre.
 
-El impacto social de Linux también se refleja en iniciativas de software libre destinadas a 
-resolver problemas reales: desde OpenStreetMap, que utiliza servidores Linux para ofrecer mapas 
-gratuitos y actualizados por la comunidad, hasta plataformas de e-salud y gestión pública basadas 
-en tecnologías abiertas. Estas soluciones han empoderado a ONG, administraciones locales y colectivos 
-ciudadanos para desarrollar y adaptar sus propias herramientas sin depender de proveedores comerciales.
+El impacto social de Linux también se refleja en iniciativas de software libre
+destinadas a resolver problemas reales: desde OpenStreetMap, que utiliza
+servidores Linux para ofrecer mapas gratuitos y actualizados por la comunidad,
+hasta plataformas de e-salud y gestión pública basadas en tecnologías abiertas.
+Estas soluciones han empoderado a ONG, administraciones locales y colectivos 
+ciudadanos para desarrollar y adaptar sus propias herramientas sin depender de
+proveedores comerciales.
 
-La adopción de las "cuatro libertades" (usar, estudiar, modificar y compartir) ha transformado al 
-usuario pasivo en un co-creador activo de su entorno digital. Este cambio de rol impulsa movimientos 
-de datos abiertos y transparencia gubernamental, promoviendo una ciudadanía digital capaz de auditar 
-procesos, compartir conocimientos y colaborar en la construcción colectiva de servicios y políticas 
-públicas.
+La adopción de las ``cuatro libertades" (usar, estudiar, modificar y compartir)
+ha transformado al usuario pasivo en un co-creador activo de su entorno digital.
+Este cambio de rol impulsa movimientos de datos abiertos y transparencia
+gubernamental, promoviendo una ciudadanía digital capaz de auditar procesos,
+compartir conocimientos y colaborar en la construcción colectiva de servicios y
+políticas públicas.
 
 % Sección 5
 \section{Linus Torvalds y el Desarrollo Colaborativo}
@@ -494,7 +526,7 @@ retroalimentación contrastaban fuertemente con los modelos de desarrollo
 tradicionales, que solían mantenerse en secreto durante sus fases tempranas.
 
 Otro elemento clave fue la decisión de licenciar Linux bajo la GNU General
-Public License (GPL). Esta licencia permitía a cualquier persona usar, modificar
+Public License (GPL), ya que esta, permitía a cualquier persona usar, modificar
 y distribuir el código fuente de Linux de forma libre. Fue una decisión
 estratégica que atrajo a una comunidad creciente de desarrolladores, quienes
 comenzaron a colaborar en el proyecto de manera voluntaria y entusiasta,
@@ -503,16 +535,12 @@ cimentando las bases del ecosistema de software libre que conocemos hoy.
 La organización del desarrollo en sí misma era inicialmente muy informal y sin
 una jerarquía estricta. No había una estructura de gestión tradicional con jefes
 supervisando a los desarrolladores. Cada miembro de la comunidad tenía derecho a
-voz y voto, y sus propuestas eran consideradas. Sin embargo, Linus Torvalds se
+voz y voto, y sus propuestas eran consideradas. Sin embargo, Linus se
 mantuvo como la figura central, tomando las decisiones finales sobre qué se
 incluía, eliminaba o cambiaba en el núcleo/kernel. Esta figura de `general'
 surgió, según el propio Torvalds, para evitar conflictos y asegurar la
 eficiencia del desarrollo.  Con el tiempo, surgieron roles más definidos de
-manera orgánica dentro de la comunidad. Un "consejo de ancianos" se formó,
-compuesto por desarrolladores clave como Dave Miller, responsable de la calidad
-del código; Ted Ts'o, encargado de las relaciones públicas y la difusión de
-Linux; y Alan Cox, considerado la mano derecha de Torvalds para aspectos
-importantes de la estructura del núcleo.
+manera orgánica dentro de la comunidad.
 
 Podemos señalar además algunos contrastes con respecto a los modelos existentes:
 
@@ -534,31 +562,32 @@ Podemos señalar además algunos contrastes con respecto a los modelos existente
     evolutivo, creciendo y mejorando gracias a las contribuciones de la comunidad.
 \end{itemize}
 
-Todos estos mecanismos permitieron programadores de todo el mundo colaboraran eficazmente en el proyecto Linux.
+Todos estos mecanismos permitieron programadores de todo el mundo colaboraran
+eficazmente en el proyecto Linux.
 
 \subsection{Linus, líder técnico y coordinador}
 Aunque el proyecto se caracterizó por su desarrollo distribuido y la
 colaboración de miles de programadores voluntarios de todo el mundo, Torvalds
 siempre mantuvo la autoridad final sobre el kernel de Linux.
-u profundo conocimiento del sistema le permitió dirigir su desarrollo y tomar
+Un profundo conocimiento del sistema le permitió dirigir su desarrollo y tomar
 decisiones técnicas cruciales. Incluso con el crecimiento masivo del proyecto,
 Torvalds se mantuvo como la única persona autorizada para fusionar las
 contribuciones al proyecto principal. Esto le permitía seleccionar las mejores
 ideas, decidir qué incluir, eliminar o modificar en el núcleo/kernel. 
 Aunque no existía una jerarquía estricta dentro de la comunidad, Torvalds se
 convirtió en la figura central en quien la comunidad confiaba más. Su estilo de
-liderazgo se describió como el de un `dictador benevolente', un término que
-sugiere que mantenía el control final para asegurar la coherencia y dirección
-del proyecto, pero lo hacía con el consenso y el respeto de la comunidad. Según
-el propio Torvalds, su método para gestionar el proyecto con cientos de miles de
-desarrolladores era esperar a que la gente se ofreciera voluntariamente para
-hacerse cargo de diferentes subsistemas, en lugar de delegar proactivamente.
+liderazgo se describió como el de un `dictador benevolente', porque mantenía el
+control final para asegurar la coherencia y dirección del proyecto, pero lo
+hacía con el consenso y el respeto de la comunidad. Según el propio Torvalds, su
+método para gestionar el proyecto con cientos de miles de desarrolladores era
+esperar a que la gente se ofreciera voluntariamente para hacerse cargo de
+diferentes subsistemas, en lugar de delegar proactivamente.
 
 \subsection{Problemas con BitKeeper, el surgimiento de Git}
 
 A medida que más programadores se unían al proyecto Linux y comenzaban a
 contribuir con mejoras y correcciones, la tarea de revisar y gestionar todas
-estas aportaciones se volvió cada vez más compleja. En un principio, Linus
+estas aportaciones se volvió cada vez más compleja. En un principio,
 Torvalds administraba el flujo de contribuciones principalmente a través del
 correo electrónico, lo cual funcionaba mientras el volumen de cambios era
 manejable. Sin embargo, con el crecimiento exponencial de la comunidad, se hizo
@@ -568,7 +597,7 @@ La escala y la naturaleza distribuida del desarrollo del kernel de Linux exigía
 un sistema de control de versiones más robusto que los disponibles en ese
 momento.
 
-Antes de la creación de Git, los sistemas de control de versiones más utilizados
+Los sistemas de control de versiones más utilizados en la época,
 eran mayoritariamente centralizados. Herramientas como Concurrent Versions
 System (CVS) y Subversion (SVN) dominaban el panorama, sustentadas en un modelo
 donde un único repositorio central albergaba todo el historial de cambios.
@@ -585,17 +614,17 @@ Linux, que requerían una infraestructura más ágil, descentralizada y robusta.
 
 Antes de 2002, Linus Torvalds no utilizaba ninguna herramienta formal de control
 de versiones (SCM) para el desarrollo del kernel de Linux. Aunque existían
-opciones como CVS y Subversion, decidió no adoptarlas debido a sus limitaciones.
-Sin embargo, a medida que el proyecto crecía y se volvía
-más complejo, la comunidad de desarrolladores del kernel insistía en la
-necesidad de una herramienta que facilitara la gestión del código.
+opciones mencionadas anteriormente, decidió no adoptarlas debido a sus
+limitaciones.  Sin embargo, a medida que el proyecto crecía y se volvía más
+complejo, la comunidad de desarrolladores del kernel insistía en la necesidad de
+una herramienta que facilitara la gestión del código.
 
-Es por esto que, en 2002, surge la alianza con BitKeeper, una alternativa descentralizada
-aunque de código propietario, que permitía a cada desarrollador tener una copia
-completa del historial del proyecto y trabajar de forma local, mejorando
-significativamente la eficiencia y autonomía del equipo, aunque a costa de
-depender de una herramienta cerrada cuya licencia gratuita resultaría temporal y
-conflictiva.
+Es por esto que, en 2002, surge la alianza con BitKeeper; una alternativa
+descentralizada de código propietario, que permitía a cada desarrollador
+tener una copia completa del historial del proyecto y trabajar de forma local,
+mejorando significativamente la eficiencia y autonomía del equipo, aunque a
+costa de depender de una herramienta cerrada cuya licencia gratuita resultaría
+temporal y conflictiva.
 
 Desde el punto de vista tecnológico, BitKeeper era una herramienta ideal para el
 desarrollo del kernel de Linux: distribuida, rápida y eficiente. Sin embargo, no
@@ -605,7 +634,7 @@ enfrentó una creciente oposición por parte del núcleo del equipo del kernel, 
 rechazaba depender de una herramienta propietaria.
 
 Sin embargo, la relación entre la comunidad del software libre y BitMover era
-tensa desde el inicio, ya que BitKeeper era un software propietario. Aunque
+tensa desde el inicio, por la misma naturaleza cerrada de BitKeeper. Aunque
 ofrecía licencias gratuitas para uso no comercial en proyectos de código
 abierto, esta concesión era frágil. En 2005, tras una serie de desacuerdos,
 BitMover decidió retirar el acceso libre a BitKeeper para los desarrolladores
@@ -615,7 +644,7 @@ para gestionar el desarrollo del proyecto.
 Ante la retirada de la licencia gratuita por parte de BitMover y la presión
 interna, Torvalds —a pesar de no querer realmente hacerlo— tomó la decisión de
 crear su propia herramienta. En apenas dos semanas, desarrolló y lanzó Git, al
-que describió con humor como “el estúpido rastreador de contenidos” (“the stupid
+que describió con humor como ``el estúpido rastreador de contenidos" (“the stupid
 content tracker”), destacando su enfoque pragmático, minimalista y
 descentralizado, en contraposición a las soluciones complejas y cerradas que
 había conocido hasta entonces.
@@ -632,20 +661,20 @@ desarrollo moderno.
 
 \subsection{La adopción masiva de Git}
 
-Git terminó siendo tan increíblemente bueno en comparación con otros sistemas de control de
-versiones que acabó comiéndose todo el mercado y teniendo una entidad propia y
-muy reconocida. Antes de su aparición, no existía un flujo de trabajo
+Git terminó siendo tan increíblemente bueno en comparación con otros sistemas de
+control de versiones que acabó comiéndose todo el mercado y teniendo una entidad
+propia y muy reconocida. Antes de su aparición, no existía un flujo de trabajo
 estandarizado en el mundo del software libre: cada proyecto y cada equipo
 utilizaba sus propias herramientas, convenciones y procesos, lo que generaba una
-auténtica "cacofonía" organizativa. En este contexto, Git no solo aportó una
+auténtica `cacofonía' organizativa. En este contexto, Git no solo aportó una
 solución técnica robusta, rápida y distribuida, sino que también instauró una
 forma más estructurada y eficiente de colaborar en grandes comunidades,
 transformando radicalmente la manera en que se desarrollaba software en todo el
 mundo.
 
-Git terminaría generando su mayor impacto a escala global cuando en 2008 se funda 
-la plataforma GitHub. Su impacto fue profundo y multifacético, entre sus principales 
-aportes se encuentran:
+Git terminaría generando su mayor impacto a escala global cuando en 2008 se
+funda la plataforma GitHub. Su impacto fue profundo y multifacético, entre sus
+principales aportes se encuentran:
 
 \begin{itemize}
     \item \textbf{Estandarización del flujo de trabajo:} GitHub consolidó la
