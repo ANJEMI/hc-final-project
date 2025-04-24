@@ -13,7 +13,7 @@
 % \date{\today}
 
 \begin{document}
-
+\renewcommand{\refname}{Bibliografía}
 % Portada
 % \maketitle
 
@@ -66,6 +66,10 @@
 
 %todo: Todas las citas de que alguien dijo algo ponerlas en negrita, italica y en un lugar aparte
 %todo: en el 3.5 y 3.6 hacer la citacion de las empresas mencionadas
+%! ejemplo de quote
+\begin{quote}
+\textbf{\textit{“El software libre es un asunto de libertad, no de precio.”}} 
+\end{quote}
 
 En la vasta cronología de la historia de la computación, pocos nombres han
 dejado una huella tan profunda y duradera como el de Linus Torvalds. Reconocido
@@ -98,7 +102,7 @@ profundamente la industria tecnológica y la cultura digital contemporánea.
 \subsection{Sistemas Operativos antes de la llegada de Linux}
 A finales del siglo XX, el panorama de los sistemas operativos estaba marcado
 por una diversidad de plataformas que reflejaban tanto los avances tecnológicos
-como las limitaciones económicas y de acceso al software. Entre ellos, UNIX,
+como las limitaciones económicas y de acceso al software. Entre ellos, \hyperref[unix]{UNIX},
 lanzado en 1969, emergió como un pilar fundamental en entornos de alto
 rendimiento. Para inicios de los años noventa, se había consolidado como el
 sistema operativo dominante en supercomputadoras y servidores, siendo adoptado
@@ -747,18 +751,26 @@ cultura de compartición y mejora continua.
 
 % Sección 7
 \section{Conclusiones}
-%todo generar con gpt
+La trayectoria y las contribuciones de Linus Torvalds han dejado una marca
+indeleble en la historia de la computación. Como creador del núcleo Linux y del
+sistema de control de versiones distribuido Git, Torvalds no solo desarrolló
+herramientas tecnológicas fundamentales, sino que también catalizó una
+transformación profunda en la manera en que el software se desarrolla, comparte
+y perfecciona.
+La filosofía de código abierto promovida por Torvalds ha tenido un impacto
+económico significativo, permitiendo la reducción de costos, fomentando la
+innovación en hardware y software, y creando nuevos modelos de negocio basados
+en servicios y soporte. Asimismo, ha generado un impacto social profundo,
+democratizando el acceso a la tecnología, fomentando la colaboración global y
+empoderando a los usuarios como co-creadores de su entorno digital.
+Podemos decir sin ninguna duda que su trabajo ha sentado un precedente
+fundamental que continúa moldeando el futuro de la tecnología, impulsando la
+innovación abierta y la construcción colectiva del conocimiento digital.
 
-- Resumen de las contribuciones clave de Linus Torvalds.\\ 
 
-- Reafirmación de la tesis sobre su influencia en la computación.\\
-
-- Reflexión sobre el legado de Torvalds y su impacto en el futuro de la
-tecnología.a
 \newpage
 
 \begin{thebibliography}{9}
-%todo cambiar a Bibliografia
 
 \bibitem{mochi_aleman_movimiento_2015}
 Mochi Alemán, Prudencio Óscar, \textit{El movimiento del software libre}, Revista Mexicana de Ciencias Políticas y Sociales, vol. 45, no. 185, 2015.
@@ -773,6 +785,21 @@ Campbell-Kelly, Martin y Aspray, William, \textit{Computer: a history of the inf
 Torvalds, Linus y Diamond, David, \textit{Just for fun: the story of an accidental revolutionary}, 1. HarperBusiness paperback ed., Harper, New York, 2002. ISBN: 978-0-06-662073-2.
 
 \end{thebibliography}
+\newpage
+
+
+\section*{Anexos} 
+\label{anexos} 
+
+\subsection*{Definiciones de algunos términos} 
+
+\begin{itemize}
+    \item \textbf{Unix:} Sistema operativo multitarea y multiusuario que fue
+    desarrollado en los años 70. Es conocido por su estabilidad, portabilidad y
+    la amplia gama de herramientas y utilidades que ofrece. Unix ha influido en
+    muchos otros sistemas operativos, incluyendo Linux y macOS.
+    \label{unix}
+\end{itemize}
 
 \end{document}
 
