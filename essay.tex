@@ -5,7 +5,7 @@
 \usepackage{graphicx}
 \usepackage{tocbibind}
 \usepackage{hyperref}
-\usepackage{todonotes}
+% \usepackage{todonotes}
 % \usepackage{cite}
 
 % \title{Linus Torvalds y el desarrollo de Linux}
@@ -13,7 +13,7 @@
 % \date{\today}
 
 \begin{document}
-\renewcommand{\refname}{Bibliografía}
+\renewcommand{\refname}{Bibliografía y Anexos}
 % Portada
 % \maketitle
 
@@ -125,10 +125,10 @@ gráficas como Macintosh y Windows.
 Antes de esta hegemonía de Microsoft, otro sistema operativo había tenido un
 papel destacado: \hyperlink{cpm}{CP/M} (Control Program for Microcomputers),
 desarrollado por \hyperlink{digitalresearch}{Digital Research}. Popular entre las
-máquinas de 8 bits, \hyperlink{cpm}{CP/M} se instaló en millones de dispositivos,
+máquinas de 8 bits, CP/M se instaló en millones de dispositivos,
 alcanzando un estimado de 200 millones de copias vendidas. Sin embargo, su
 protagonismo fue efímero frente al crecimiento explosivo de
-\hyperlink{msdos}{MS-DOS}.
+MS-DOS.
 
 Aunque su relevancia había disminuido con la llegada de las computadoras
 personales, los sistemas operativos de mainframe como \hyperlink{os360}{OS/360}
@@ -433,14 +433,16 @@ usuarios y programadores: Open Source podía ser más rentable y atractivo que e
 modelo de negocio empleado por otras compañías como Microsoft.
 
 A finales de los 2000, Linux se impuso en el mercado de servidores gracias al
-stack LAMP (Linux, Apache, MySQL, PHP/Python/Perl) y al coste cero en licencias.
-Grandes compañías web y proveedores de hosting pusieron sus centros de datos, y
-luego sus nubes, sobre Linux. Para 2008 más del 60\% de los servidores en
-producción funcionaban con núcleo Linux, y desde 2018 todos los equipos del
-TOP500 en supercomputación lo utilizan, aprovechando su escalabilidad y la 
+stack LAMP (Linux, \hyperlink{apache}{Apache}, \hyperlink{mysql}{MySQL},
+\hyperlink{php}{PHP}/\hyperlink{python}{Python}/\hyperlink{perl}{Perl}) y al
+coste cero en licencias.  Grandes compañías web y proveedores de hosting
+pusieron sus centros de datos, y luego sus nubes, sobre Linux. Para 2008 más del
+60\% de los servidores en producción funcionaban con núcleo Linux, y desde 2018
+todos los equipos del TOP500 en supercomputación lo utilizan, aprovechando su
+escalabilidad y la 
 capacidad de tunear el kernel para arquitecturas masivamente paralelas.
 
-Con el tiempo incluso grandes empresas como Oracle, Netscape, Corel e Intel,
+Con el tiempo incluso grandes empresas como \hyperlink{oracle}{Oracle}, \hyperlink{netscape}{Netscape}, Corel e \hyperlink{intel}{Intel},
 empezaron a prestar atención a las nuevas tendencias, y cada vez más a menudo
 consideraban a Linux como una alternativa real a Windows. Por ejemplo, IBM
 destinó alrededor de mil millones de dólares a la mejora adicional de Linux y,
@@ -468,27 +470,29 @@ distribuciones.
 Actualmente Linux es respaldado por la mayoría de las grandes empresas del
 sector, las que colaboran con su difusión ya sea trabajando en el núcleo,
 proporcionando soluciones de software o preinstalando el sistema operativo,
-algunas de ellas son: Intel, Google, \hyperlink{ibm}{IBM}, AMD, Valve, Dell, Lenovo, Asus,
+algunas de ellas son: Intel, Google, \hyperlink{ibm}{IBM}, \hyperlink{amd}{AMD}, \hyperlink{valve}{Valve}, \hyperlink{dell}{Dell}, \hyperlink{lenovo}{Lenovo}, \hyperlink{asus}{Asus},
 Fujitsu, Oracle, entre muchas otras. De igual manera el apoyo de compañías de
 software también está presente, ya que, entre otras aplicaciones Java, Google
 Earth, Adobe Reader, Adobe Flash y Yahoo! Messenger están disponibles para
-Linux.  \subsection{El impacto económico de Linux}
+Linux.  
+
+\subsection{El impacto económico de Linux}
 
 Linux logró la combinación perfecta, grandes reducciones de gastos a las
 empresas de software y cuantiosas ganancias a los desarrolladores, los cuales
 podían vender servicios de configuración de servidores para empresas, así como
 ayudar a mantener su funcionamiento. 
 
-Plataformas como Amazon Web Services (AWS), lanzada en 2006, se construyeron
+Plataformas como Amazon Web Services (\hyperlink{aws}{AWS}), lanzada en 2006, se construyeron
 sobre Linux, permitiendo a startups acceder a infraestructura escalable a una
-fracción del costo tradicional. Compañías como Red Hat y Canonical, creadora de
+fracción del costo tradicional. Compañías como \hyperlink{redhat}{Red Hat} y \hyperlink{canonical}{Canonical}, creadora de
 Ubuntu, demostraron que el software libre podía ser rentable. Red Hat facturó
 miles de millones ofreciendo soporte técnico y certificaciones, no el código en
 sí. Este modelo inspiró a otras empresas, como Docker, que monetizaron servicios
 en lugar de licencias.
 
 Linux también influyó en la innovación en hardware y el Internet de las Cosas
-(IoT), permitiendo el auge de dispositivos embebidos de bajo costo. Raspberry Pi
+(\hyperlink{iot}{IoT}), permitiendo el auge de dispositivos embebidos de bajo costo. Raspberry Pi
 (2012), una computadora de 35 dólares con Linux, se convirtió en herramienta
 educativa y prototipado industrial. De igual manera empresas como Tesla
 integraron Linux en sus sistemas de infoentretenimiento, reduciendo dependencia
@@ -539,7 +543,7 @@ políticas públicas.
 
 Cómo hemos visto, Linux fue principalmente un proyecto personal de Linus Torvalds.
 Comenzó a trabajar en el kernel como un hobby, sin la intención de competir con
-sistemas comerciales como UNIX ni de desarrollar algo tan ambicioso como \hyperlink{gnu}{GNU}. Su
+sistemas comerciales como UNIX ni de desarrollar algo tan ambicioso como GNU. Su
 objetivo inicial era simplemente crear un sistema operativo funcional que
 pudiera utilizar en su propia computadora y, de paso, ayudar a otros
 estudiantes.
@@ -551,8 +555,8 @@ sistema y a ofrecer comentarios. Esta transparencia y disposición a recibir
 retroalimentación contrastaban fuertemente con los modelos de desarrollo
 tradicionales, que solían mantenerse en secreto durante sus fases tempranas.
 
-Otro elemento clave fue la decisión de licenciar Linux bajo la \hyperlink{gnu}{GNU} General
-Public License (\hyperlink{gpl}{GPL}), ya que esta, permitía a cualquier persona usar, modificar
+Otro elemento clave fue la decisión de licenciar Linux bajo la General
+Public License, ya que esta, permitía a cualquier persona usar, modificar
 y distribuir el código fuente de Linux de forma libre. Fue una decisión
 estratégica que atrajo a una comunidad creciente de desarrolladores, quienes
 comenzaron a colaborar en el proyecto de manera voluntaria y entusiasta,
@@ -572,7 +576,7 @@ Podemos señalar además algunos contrastes con respecto a los modelos existente
 
 \begin{itemize}
     \item \textbf{Desarrollo centralizado vs. desarrollo distribuido:} 
-        Los modelos tradicionales, como los utilizados por \hyperlink{microsoft}{Microsoft} en el
+        Los modelos tradicionales, como los utilizados por Microsoft en el
         desarrollo de Windows, se basaban en pequeños equipos de programadores
         internos que trabajaban en un código cerrado. Linux, en cambio, se
         desarrolló de manera distribuida con la colaboración de cientos e
@@ -623,13 +627,14 @@ La escala y la naturaleza distribuida del desarrollo del kernel de Linux exigía
 un sistema de control de versiones más robusto que los disponibles en ese
 momento.
 
-Los sistemas de control de versiones más utilizados en la época,
-eran mayoritariamente centralizados. Herramientas como Concurrent Versions
-System (CVS) y Subversion (SVN) dominaban el panorama, sustentadas en un modelo
-donde un único repositorio central albergaba todo el historial de cambios.
-Aunque estos sistemas funcionaban de forma aceptable en entornos de equipos
-pequeños o proyectos simples, se mostraban deficientes al escalar hacia
-proyectos complejos, distribuidos y de rápida evolución como el kernel de Linux.
+Los sistemas de control de versiones más utilizados en la época, eran
+mayoritariamente centralizados. Herramientas como \hyperlink{concurrent versions
+system }{Concurrent Versions System } y \hyperlink{svn}{Subversion} dominaban el
+panorama, sustentadas en un modelo donde un único repositorio central albergaba
+todo el historial de cambios.  Aunque estos sistemas funcionaban de forma
+aceptable en entornos de equipos pequeños o proyectos simples, se mostraban
+deficientes al escalar hacia proyectos complejos, distribuidos y de rápida
+evolución como el kernel de Linux.
 
 Los sistemas de control de versiones centralizados presentaban serias
 limitaciones: dependían de un único servidor (punto crítico de fallo), ofrecían
@@ -639,7 +644,7 @@ resultaron inviables para proyectos complejos y distribuidos como el kernel de
 Linux, que requerían una infraestructura más ágil, descentralizada y robusta.
 
 Antes de 2002, Linus Torvalds no utilizaba ninguna herramienta formal de control
-de versiones (SCM) para el desarrollo del kernel de Linux. Aunque existían
+de versiones para el desarrollo del kernel de Linux. Aunque existían
 opciones mencionadas anteriormente, decidió no adoptarlas debido a sus
 limitaciones.  Sin embargo, a medida que el proyecto crecía y se volvía más
 complejo, la comunidad de desarrolladores del kernel insistía en la necesidad de
@@ -670,8 +675,15 @@ para gestionar el desarrollo del proyecto.
 Ante la retirada de la licencia gratuita por parte de BitMover y la presión
 interna, Torvalds —a pesar de no querer realmente hacerlo— tomó la decisión de
 crear su propia herramienta. En apenas dos semanas, desarrolló y lanzó Git, al
-que describió con humor como ``el estúpido rastreador de contenidos" (“the stupid
-content tracker”), destacando su enfoque pragmático, minimalista y
+que describió con humor como 
+\begin{quote}
+\textbf{``el estúpido rastreador de contenidos"}
+\end{quote}
+\begin{quote}
+\textbf{(“the stupid content tracker”)}
+\end{quote}
+
+Destacando su enfoque pragmático, minimalista y
 descentralizado, en contraposición a las soluciones complejas y cerradas que
 había conocido hasta entonces.
 
@@ -704,9 +716,9 @@ principales aportes se encuentran:
 
 \begin{itemize}
     \item \textbf{Estandarización del flujo de trabajo:} GitHub consolidó la
-    colaboración en una única plataforma durante el auge de la Web 2.0. Antes de
+    colaboración en una única plataforma durante el auge de la \hyperlink{web2}{Web 2.0}. Antes de
     su existencia, los proyectos usaban listas de correo y archivos comprimidos
-    (tarballs) para compartir código, con procesos de colaboración poco
+    (\hyperlink{tarballs}{tarballs}) para compartir código, con procesos de colaboración poco
     uniformes. GitHub integró herramientas clave como gestión de issues,
     perfiles de contributores y pull requests, facilitando un flujo de trabajo
     limpio, transparente y colaborativo, accesible mediante una interfaz
@@ -746,7 +758,7 @@ era del open source.
 
 Linus Torvalds ha sido una figura clave en la promoción del software de código
 abierto, especialmente a través del desarrollo del kernel de Linux. Su decisión
-de licenciar Linux bajo la \hyperlink{gnu}{GNU} \hyperlink{gpl}{GPL} fue crucial, ya que permitió el acceso,
+de licenciar Linux bajo la GPL fue crucial, ya que permitió el acceso,
 modificación y redistribución del código por parte de cualquier desarrollador.
 Esta apertura fomentó la colaboración masiva y garantizó que las mejoras al
 sistema también fueran compartidas libremente, desafiando así los modelos de
@@ -811,159 +823,196 @@ Torvalds, Linus y Diamond, David, \textit{Just for fun: the story of an accident
 
 \subsection*{Definiciones de algunos términos} 
 
-\begin{itemize}
+\begin{itemize} \item \hypertarget{amd}{\textbf{AMD:}} Fabricante de
+procesadores y tecnologías relacionadas, competidor directo de Intel.
+\label{amd}
+
 \item \hypertarget{apple}{\textbf{Apple:}} Empresa conocida por computadoras
 Macintosh y dispositivos como el iPhone. En los 90, usó variantes de UNIX en sus
-sistemas y luego desarrolló macOS, basado en BSD.
+sistemas y luego desarrolló macOS, basado en BSD.  \label{apple}
 
 \item \hypertarget{assembler}{\textbf{Assembler:}} Lenguaje de bajo nivel para
 programación directa del hardware. Usado en sistemas antiguos como ITS.
+\label{assembler}
+
+\item \hypertarget{asus}{\textbf{Asus:}} Fabricante taiwanés de hardware y
+electrónica, incluyendo laptops y placas base.  \label{asus}
 
 \item \hypertarget{att}{\textbf{AT\&T:}} Empresa de telecomunicaciones
-estadounidense, pionera en computación y redes. Desarrolló UNIX en Bell Labs y
-fue clave en la creación de estándares tecnológicos.
+estadounidense, pionera en computación y redes. Desarrolló UNIX en Bell Labs.
+\label{att}
+
+\item \hypertarget{aws}{\textbf{AWS (Amazon Web Services):}} Plataforma de
+servicios en la nube utilizada globalmente para alojar y escalar aplicaciones.
+\label{aws}
 
 \item \hypertarget{basic}{\textbf{BASIC:}} Lenguaje de programación sencillo,
-popular en microcomputadoras. Usado en entornos educativos.
+popular en microcomputadoras. Usado en entornos educativos.  \label{basic}
 
 \item \hypertarget{belllabs}{\textbf{Bell Labs:}} Centro de investigación de
 AT\&T donde se desarrolló UNIX. Cuna de innovaciones en computación y
-telecomunicaciones.
+telecomunicaciones.  \label{belllabs}
 
 \item \hypertarget{bitkeeper}{\textbf{BitKeeper:}} Herramienta de control de
-versiones propietaria usada temporalmente para Linux, cuyo conflicto de licencia
-llevó a la creación de Git.
+versiones propietaria usada temporalmente para Linux; su licencia motivó la
+creación de Git.  \label{bitkeeper}
 
 \item \hypertarget{bostos}{\textbf{BOS/TOS:}} Sistemas operativos tempranos para
 mainframes, usados en entornos corporativos antes de la era de las PCs.
+\label{bostos}
 
 \item \hypertarget{bsd}{\textbf{BSD (Berkeley Software Distribution):}} Variante
-de UNIX desarrollada en UC Berkeley. Base para sistemas como macOS y proyectos
-libres.
+de UNIX desarrollada en UC Berkeley. Base para sistemas como macOS.  \label{bsd}
+
+\item \hypertarget{canonical}{\textbf{Canonical:}} Empresa que comercializa
+Ubuntu, una de las distribuciones más populares de Linux.  \label{canonical}
 
 \item \hypertarget{cobolfortran}{\textbf{COBOL/FORTRAN:}} Lenguajes de
-programación para negocios (COBOL) y ciencia (FORTRAN). Dominaron en mainframes.
+programación para negocios (COBOL) y ciencia (FORTRAN). Dominantes en
+mainframes.  \label{cobolfortran}
 
-\item \hypertarget{copyleft}{\textbf{Copyleft:}} Filosofía que usa derechos de
-autor para asegurar que las obras derivadas mantengan libertades, contraria al
-copyright restrictivo.
+\item \hypertarget{concurrent versions system }{\textbf{Concurrent Versions
+System (CVS):}} Sistema de control de versiones usado antes de Git y Subversion.
+\label{concurrent versions system }
+
+\item \hypertarget{corel}{\textbf{Corel:}} Empresa de software conocida por
+CorelDRAW y otros productos de diseño gráfico.  \label{corel}
+
+\item \hypertarget{copyleft}{\textbf{Copyleft:}} Filosofía legal que asegura que
+las obras derivadas mantengan libertades de uso.  \label{copyleft}
 
 \item \hypertarget{cpm}{\textbf{CP/M (Control Program for Microcomputers):}}
-Sistema operativo de 8 bits de Digital Research, precursor de MS-DOS. Popular en
-los 70, pero eclipsado por la llegada de IBM PC con MS-DOS.
+Sistema operativo de 8 bits, precursor de MS-DOS.  \label{cpm}
 
-\item \hypertarget{debian}{\textbf{Debian:}} Distribución de Linux creada en
-1993 por Ian Murdock. Conocida por su enfoque comunitario y su sistema de
-gestión de paquetes APT (Advanced Package Tool).
+\item \hypertarget{debia}{\textbf{Debian:}} Distribución de Linux creada en 1993
+por Ian Murdock. Destacada por su enfoque comunitario.  \label{debian}
+
+\item \hypertarget{dell}{\textbf{Dell:}} Fabricante estadounidense de hardware,
+especialmente computadoras personales y servidores.  \label{dell}
 
 \item \hypertarget{digitalresearch}{\textbf{Digital Research:}} Empresa fundada
-por Gary Kildall, creadora de CP/M. Competidora temprana de Microsoft en
-sistemas para microcomputadoras.
+por Gary Kildall, creadora de CP/M.  \label{digitalresearch}
 
 \item \hypertarget{dmca}{\textbf{DMCA (Digital Millennium Copyright Act):}} Ley
-estadounidense que regula derechos de autor, a veces limitando la distribución
-de software libre.
+estadounidense que regula derechos de autor en el ámbito digital.  \label{dmca}
 
 \item \hypertarget{fosdem}{\textbf{FOSDEM (Free and Open Source Developers'
-European Meeting):}} Conferencia anual para desarrolladores de software libre en
-Europa.
+European Meeting):}} Conferencia europea para desarrolladores de software libre.
+\label{fosdem}
 
-\item \hypertarget{ftp}{\textbf{FTP (File Transfer Protocol):}} Protocolo de red
-estándar para la transferencia de archivos entre un cliente y un servidor sobre
-una red TCP/IP.
+\item \hypertarget{ftp}{\textbf{FTP (File Transfer Protocol):}} Protocolo para
+transferencia de archivos entre cliente y servidor.  \label{ftp}
 
-\item \hypertarget{gcc}{\textbf{GCC (GNU Compiler Collection):}} Conjunto de
-compiladores libres para C, C++, Fortran y otros lenguajes.
+\item \hypertarget{gcc}{\textbf{GCC (GNU Compiler Collection):}} Compiladores
+libres para múltiples lenguajes como C y C++.  \label{gcc}
 
 \item \hypertarget{github}{\textbf{GitHub:}} Plataforma basada en Git para
-alojar proyectos y facilitar colaboración. Centralizó el desarrollo de código
-abierto en la década de 2010.
+alojar y colaborar en proyectos de software.  \label{github}
 
 \item \hypertarget{gnu}{\textbf{GNU (GNU's Not UNIX):}} Proyecto para crear un
-sistema operativo libre compatible con UNIX. Combinado con Linux, formó
-GNU/Linux.
+sistema operativo libre compatible con UNIX.  \label{gnu}
 
 \item \hypertarget{gpl}{\textbf{GPL (Licencia Pública General):}} Licencia
-copyleft que garantiza libertades de uso, modificación y distribución. Usada en
-Linux y software libre.
+copyleft que garantiza libertad de uso, modificación y distribución.
+\label{gpl}
 
-\item \hypertarget{ibm}{\textbf{IBM (International Business Machines):}} Empresa
-pionera en tecnología, creadora de mainframes como el OS/360. Contribuyó al
-desarrollo de estándares en computación corporativa y más tarde apoyó el código
-abierto, incluyendo Linux.
+\item \hypertarget{ibm}{\textbf{IBM (International Business Machines):}} Pionera
+en tecnología. Desarrolló mainframes como el OS/360.  \label{ibm}
+
+\item \hypertarget{intel}{\textbf{Intel:}} Fabricante líder de procesadores para
+computadoras personales.  \label{intel}
+
+\item \hypertarget{iot}{\textbf{IoT (Internet of Things):}} Conjunto de
+dispositivos interconectados que recopilan e intercambian datos.  \label{iot}
 
 \item \hypertarget{its}{\textbf{ITS (Incompatible Timesharing System):}} Sistema
-del MIT para mainframes, escrito en Assembler. Ejemplo temprano de software
-colaborativo.
+operativo colaborativo del MIT.  \label{its}
 
-\item \hypertarget{kernel}{\textbf{Kernel (Núcleo):}} Parte central de un
-sistema operativo que gestiona recursos del hardware. Linux es un kernel, no un
-sistema operativo completo.
+\item \hypertarget{kernel}{\textbf{Kernel:}} Núcleo de un sistema operativo que
+gestiona el hardware. Linux es un kernel.  \label{kernel}
 
-\item \hypertarget{licencias}{\textbf{Licencias MIT/Apache:}} Licencias
-permisivas de código abierto, populares en GitHub. Permiten reutilización con
-menos restricciones que la GPL.
+\item \hypertarget{lenovo}{\textbf{Lenovo:}} Empresa china que fabrica hardware,
+incluyendo laptops y servidores.  \label{lenovo}
 
-\item \hypertarget{mainframe}{\textbf{Mainframe:}} Computadoras grandes y
-potentes para procesamiento masivo de datos, usadas en entornos corporativos
-(ej: OS/360 de IBM).
+\item \hypertarget{licencias mit/apache}{\textbf{Licencias MIT/Apache:}}
+Licencias de código abierto permisivas. Requieren pocas condiciones para
+redistribución.  \label{mitapache}
+
+\item \hypertarget{mainframe}{\textbf{Mainframe:}} Computadora central de alto
+rendimiento, utilizada en entornos empresariales.  \label{mainframe}
 
 \item \hypertarget{meritocracia}{\textbf{Meritocracia Técnica:}} Modelo donde
-las contribuciones se juzgan por su calidad técnica, no por jerarquías. Usado en
-el desarrollo de Linux.
+las decisiones se basan en el mérito técnico de las contribuciones.
+\label{meritocracia}
 
-\item \hypertarget{minix}{\textbf{MINIX:}} Sistema operativo educativo de código
-abierto creado por Andrew S. Tanenbaum. Usado por Linus Torvalds como
-inspiración para Linux.
+\item \hypertarget{minix}{\textbf{MINIX:}} Sistema operativo educativo en el que
+Linus Torvalds se inspiró para desarrollar Linux.  \label{minix}
 
-\item \hypertarget{microsoft}{\textbf{Microsoft:}} Gigante tecnológico creador
-de MS-DOS y Windows. Representó el modelo de software propietario, en contraste
-con el código abierto.
-
-\item \hypertarget{mitapache}{\textbf{Licencias MIT/Apache:}} Licencias
-permisivas de código abierto, populares en GitHub. Permiten reutilización con
-menos restricciones que la GPL.
+\item \hypertarget{microsoft}{\textbf{Microsoft:}} Empresa creadora de Windows y
+MS-DOS. Representa el modelo de software propietario.  \label{microsoft}
 
 \item \hypertarget{msdos}{\textbf{MS-DOS (Microsoft Disk Operating System):}}
-Sistema operativo de línea de comandos para PCs compatibles con IBM. Dominó el
-mercado en los 80-90 y sentó las bases para Windows.
+Sistema operativo dominante en los 80, precursor de Windows.  \label{msdos}
+
+\item \hypertarget{netscape}{\textbf{Netscape:}} Navegador popular en los 90. Su
+liberación como código abierto dio origen a Mozilla Firefox.  \label{netscape}
 
 \item \hypertarget{openstreetmap}{\textbf{OpenStreetMap:}} Proyecto colaborativo
-para crear mapas libres, usando infraestructura basada en Linux.
+para crear mapas libres con ayuda de la comunidad.  \label{openstreetmap}
+
+\item \hypertarget{oracle}{\textbf{Oracle:}} Empresa de software conocida por
+sus bases de datos relacionales y productos empresariales.  \label{oracle}
 
 \item \hypertarget{os360}{\textbf{OS/360:}} Sistema operativo de IBM para
-mainframes, destacado por su complejidad y papel en la "crisis del software" de
-los 60.
+mainframes, influyente en el desarrollo del software moderno.  \label{os360}
 
-\item \hypertarget{pascal}{\textbf{Pascal:}} Lenguaje estructurado usado en
-enseñanza de programación. Influenció prácticas de desarrollo.
+\item \hypertarget{pascal}{\textbf{Pascal:}} Lenguaje estructurado usado
+principalmente en educación y desarrollo inicial.  \label{pascal}
+
+\item \hypertarget{perl}{\textbf{Perl:}} Lenguaje de programación flexible,
+popular en administración de sistemas y desarrollo web.  \label{perl}
+
+\item \hypertarget{php}{\textbf{PHP:}} Lenguaje de programación ampliamente
+usado para el desarrollo web del lado del servidor.  \label{php}
+
+\item \hypertarget{python}{\textbf{Python:}} Lenguaje de programación de alto
+nivel, versátil y legible, popular en ciencia de datos, web y automatización.
+\label{python}
 
 \item \hypertarget{raspberrypi}{\textbf{Raspberry Pi:}} Computadora de bajo
-costo con Linux, usada en educación y proyectos de hardware.
+costo usada en educación, domótica y proyectos de hardware libre.
+\label{raspberrypi}
 
-\item \hypertarget{redhatcanonical}{\textbf{Red Hat/Canonical:}} Empresas que
-comercializan soporte para distribuciones Linux (Red Hat Enterprise Linux,
-Ubuntu).
+\item \hypertarget{redhat}{\textbf{Red Hat:}} Empresa que ofrece soporte
+empresarial para Linux a través de Red Hat Enterprise Linux.  \label{redhat}
 
-\item \hypertarget{richardstallman}{\textbf{Richard Stallman:}} Programador y
-activista del software libre, fundador del proyecto GNU y de la Free Software
-Foundation.
+\item \hypertarget{richardstallman}{\textbf{Richard Stallman:}} Fundador del
+proyecto GNU y de la Free Software Foundation.  \label{richardstallman}
 
 \item \hypertarget{slackware}{\textbf{Slackware:}} Una de las distribuciones de
-Linux más antiguas (creada en 1993 por Patrick Volkerding). Con énfasis en la
-estabilidad y el diseño Unix “tradicional”.
+Linux más antiguas, conocida por su simplicidad y estabilidad.
+\label{slackware}
 
-\item \hypertarget{sun}{\textbf{Sun (Sun Microsystems):}} Empresa tecnológica
-fundada en 1982, conocida por sus estaciones de trabajo y servidores basados en
-UNIX. Desarrolló Solaris (un sistema operativo UNIX) y el lenguaje de
-programación Java.
+\item \hypertarget{sun}{\textbf{Sun Microsystems:}} Conocida por desarrollar
+Java y el sistema operativo Solaris.  \label{sun}
 
-\item \hypertarget{suse}{\textbf{SUSE:}} Distribución de Linux fundada en
-Alemania en 1992 (originalmente S.u.S.E.). Conocida por sus herramientas de
-administración como YaST (Yet another Setup Tool).
+\item \hypertarget{suse}{\textbf{SUSE:}} Distribución de Linux alemana enfocada
+en soluciones empresariales.  \label{suse}
 
+\item \hypertarget{svn}{\textbf{SVN (Subversion):}} Sistema de control de
+versiones sucesor de CVS, usado antes de Git.  \label{svn}
 
-\end{itemize}
+\item \hypertarget{tarballs}{\textbf{Tarballs:}} Archivos comprimidos usados
+para distribuir código fuente de software en sistemas Unix/Linux.
+\label{tarballs}
+
+\item \hypertarget{valve}{\textbf{Valve:}} Empresa de videojuegos conocida por
+Steam, impulsó el uso de Linux en el gaming.  \label{valve}
+
+\item \hypertarget{web2}{\textbf{Web 2.0:}} Segunda generación de la web
+centrada en la interacción del usuario y contenido generado por comunidades.
+\label{web2} \end{itemize}
+
 
 \end{document}
 
