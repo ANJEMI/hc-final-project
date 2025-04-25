@@ -4,41 +4,53 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{tocbibind}
-\usepackage{hyperref}
-% \usepackage{todonotes}
-% \usepackage{cite}
+\usepackage{graphicx}
+\usepackage[absolute,overlay]{textpos} % para posicionar con coordenadas
+\usepackage{tikz}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{pdfpages}
+\usepackage{xcolor} % Para definir colores
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=red, citecolor=red]{hyperref}
 
-% \title{Linus Torvalds y el desarrollo de Linux}
-% \author{José Antonio Concepción Alvarez\\  José Miguel Zayas Pérez \\ Grupo: 411 y 412}
-% \date{\today}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\renewcommand{\sectionmark}[1]{%
+  \markright{#1}%
+}
+\renewcommand{\subsectionmark}[1]{}
+\fancyhead[C]{\nouppercase{\rightmark}} 
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+
+
 
 \begin{document}
-\renewcommand{\refname}{Bibliografía y Anexos}
-% Portada
-% \maketitle
 
 \begin{titlepage}
     \centering
-    
-    % Incluir la imagen
-    \includegraphics[width=1.0\textwidth]{images/front.png} % Cambia la ruta a la ubicación de tu imagen
-    
+    \includepdf[pages=1, scale=1.1]{images/front.pdf}
+
     \vspace{1cm}
     \newpage
     
-    % Título
     {\Huge \textbf{Linus Torvalds y el desarrollo de Linux}}\\
     \vspace{0.5cm}
     
-    % Autores
     {\Large José Antonio Concepción Alvarez \\  José Miguel Zayas Pérez \\ Grupo: 411 y 412}
     
-    % \vfill
-    
-    % Fecha
-    % {\large \today}
+    {\large \today}
    \thispagestyle{empty} 
 \end{titlepage}
+
+\renewcommand{\refname}{Bibliografía y Anexos}
+
+
 
 \begin{centering}
     \vspace{2cm}
@@ -57,19 +69,21 @@
 \end{centering}
 \newpage
 
-% Índice
 \tableofcontents
+
+
+
 \newpage
+\hypersetup{linkcolor=blue, urlcolor=blue, citecolor=blue}
 
-% Sección 1
-\section{Introducción} 
 
-%todo: Todas las citas de que alguien dijo algo ponerlas en negrita, italica y en un lugar aparte
-%todo: en el 3.5 y 3.6 hacer la citacion de las empresas mencionadas
-%! ejemplo de quote
 \begin{quote}
-\textbf{\textit{“El software libre es un asunto de libertad, no de precio.”}} 
+\textbf{\textit{El software libre es un asunto de libertad, no de precio.}} 
+Richard Altman
 \end{quote}
+
+
+\section{Introducción}
 
 En la vasta cronología de la historia de la computación, pocos nombres han
 dejado una huella tan profunda y duradera como el de Linus Torvalds. Reconocido
@@ -367,7 +381,7 @@ En 1994, con el lanzamiento de Linux 1.0, la primera versión estable, el sistem
 demostró ser viable comercialmente. Torvalds presentó esta versión en la
 Universidad de Helsinki, destacando dos principios UNIX que adoptó:
 
-\begin{itemize}
+\begin{itemize}[label=$\bullet$, itemsep=0.5em]
     \item \textbf{Todo es un archivo}: dispositivos, procesos y datos se
     gestionaban como archivos, simplificando la interoperabilidad.     
     \item \textbf{Cada herramienta hace una sola cosa y la hace bien}:
@@ -377,7 +391,7 @@ Universidad de Helsinki, destacando dos principios UNIX que adoptó:
 Ante el torrente de contribuidores, organizados en listas de correo y servidores
 
 FTP, se estableció una estructura flexible:
-\begin{itemize}
+\begin{itemize}[label=$\bullet$, itemsep=0.5em]
     \item \textbf{Linus Torvalds}: ``el General", revisaría y aceptaría los parches que
     cumplen los estándares de calidad y coherencia arquitectónica. 
     \item \textbf{Dave Miller}: responsable de la calidad, descartaría correcciones
@@ -536,7 +550,8 @@ gubernamental, promoviendo una ciudadanía digital capaz de auditar procesos,
 compartir conocimientos y colaborar en la construcción colectiva de servicios y
 políticas públicas.
 
-% Sección 5
+
+\newpage
 \section{Linus Torvalds y el Desarrollo Colaborativo}
 
 \subsection{Una nueva forma}
@@ -714,7 +729,7 @@ Git terminaría generando su mayor impacto a escala global cuando en 2008 se
 funda la plataforma GitHub. Su impacto fue profundo y multifacético, entre sus
 principales aportes se encuentran:
 
-\begin{itemize}
+\begin{itemize}[label=$\bullet$, itemsep=0.5em]
     \item \textbf{Estandarización del flujo de trabajo:} GitHub consolidó la
     colaboración en una única plataforma durante el auge de la \hyperlink{web2}{Web 2.0}. Antes de
     su existencia, los proyectos usaban listas de correo y archivos comprimidos
@@ -779,6 +794,7 @@ software. Su defensa del código abierto sentó un precedente y transformó la
 industria del software, inspirando innumerables proyectos y fomentando una
 cultura de compartición y mejora continua. 
 
+\newpage
 % Sección 7
 \section{Conclusiones}
 La trayectoria y las contribuciones de Linus Torvalds han dejado una marca
@@ -803,23 +819,25 @@ innovación abierta y la construcción colectiva del conocimiento digital.
 \begin{thebibliography}{9}
 
 \bibitem{mochi_aleman_movimiento_2015}
-Mochi Alemán, Prudencio Óscar, \textit{El movimiento del software libre}, Revista Mexicana de Ciencias Políticas y Sociales, vol. 45, no. 185, 2015.
+Mochi Alemán, Prudencio Óscar, \textit{El movimiento del software libre},
+Revista Mexicana de Ciencias Políticas y Sociales, vol. 45, no. 185, 2015.
 
 \bibitem{stallman_free_2002}
-Stallman, Richard y Stallman, Richard M., \textit{Free software, free society: selected essays}, 1st ed., Free Software Foundation, Boston, Mass, 2002. ISBN: 978-1-882114-98-6.
+Stallman, Richard y Stallman, Richard M., \textit{Free software, free society:
+selected essays}, 1st ed., Free Software Foundation, Boston, Mass, 2002. ISBN:
+978-1-882114-98-6.
 
 \bibitem{campbell-kelly_computer_1996}
-Campbell-Kelly, Martin y Aspray, William, \textit{Computer: a history of the information machine}, BasicBooks, New York, 1996. ISBN: 978-0-465-02989-1.
+Campbell-Kelly, Martin y Aspray, William, \textit{Computer: a history of the
+information machine}, BasicBooks, New York, 1996. ISBN: 978-0-465-02989-1.
 
 \bibitem{torvalds_just_2002}
-Torvalds, Linus y Diamond, David, \textit{Just for fun: the story of an accidental revolutionary}, 1. HarperBusiness paperback ed., Harper, New York, 2002. ISBN: 978-0-06-662073-2.
+Torvalds, Linus y Diamond, David, \textit{Just for fun: the story of an
+accidental revolutionary}, 1. HarperBusiness paperback ed., Harper, New York,
+2002. ISBN: 978-0-06-662073-2.
 
 \end{thebibliography}
 \newpage
-
-
-\section*{Anexos} 
-\label{anexos} 
 
 \subsection*{Definiciones de algunos términos} 
 
