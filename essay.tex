@@ -123,7 +123,7 @@ como las limitaciones económicas y de acceso al software. Entre ellos,
 UNIX, lanzado en 1969, emergió como un pilar fundamental en
 entornos de alto rendimiento. Para inicios de los años noventa, se había
 consolidado como el sistema operativo dominante en supercomputadoras y
-servidores, siendo adoptado por gigantes tecnológicos como \hypertarget{ibm}{IBM},
+servidores, siendo adoptado por gigantes tecnológicos como \hyperlink{ibm}{IBM},
 \hyperlink{sun}{Sun} y \hyperlink{apple}{Apple} .  No obstante, su alto costo y la
 fragmentación en múltiples variantes —derivadas de la base de código de
 \hyperlink{att}{AT\&T} (System V) y de la Universidad de California-Berkeley
@@ -197,7 +197,7 @@ innovación, dificultando la respuesta ágil a los cambios del entorno
 tecnológico.
 
 Durante los años 60, la creciente complejidad de los proyectos llevó a lo que se
-conoció como la ``crisis del software". Iniciativas como el sistema OS/360 de IBM
+conoció como la `crisis del software´. Iniciativas como el sistema OS/360 de IBM
 expusieron las dificultades de gestionar proyectos a gran escala, lo que impulsó
 la búsqueda de metodologías más estructuradas para el desarrollo. Esta época
 también vio un auge en el diseño de nuevos lenguajes de programación, destinados
@@ -207,7 +207,7 @@ Dartmouth, encontró un lugar central en las primeras microcomputadoras.
 \hyperlink{pascal}{Pascal}, introducido en 1971, se convirtió en un lenguaje
 clave en la educación formal de programación.
 
-Otro cambio técnico crucial de la época fue la introducción del `time-sharing´,
+Otro cambio técnico crucial de la época fue la introducción del \textquoteleft time-sharing´,
 que permitió compartir el poder computacional de grandes máquinas entre
 múltiples usuarios. Este paradigma impulsó el acceso a la computación en
 entornos académicos y favoreció la difusión de lenguajes como BASIC, que
@@ -215,7 +215,7 @@ democratizaron el uso de la programación en los albores de la informática
 personal.
 
 En este entorno surgió UNIX, desarrollado en \hyperlink{belllabs}{Bell Labs} a partir de 1969. Su
-portabilidad, eficiencia y adecuación para el`time-sharing´ lo convirtieron en el
+portabilidad, eficiencia y adecuación para el `time-sharing´ lo convirtieron en el
 sistema operativo preferido en universidades y centros de investigación, y más
 tarde en servidores y supercomputadoras. Sin embargo, su costo y el carácter
 cerrado de sus licencias lo mantuvieron alejado del usuario promedio.
@@ -223,7 +223,7 @@ cerrado de sus licencias lo mantuvieron alejado del usuario promedio.
 En contraste con esta hegemonía comercial y cerrada, comenzaban a emerger
 comunidades que compartían software libremente, como la del Laboratorio de
 Inteligencia Artificial del MIT. El desencanto con las restricciones del
-software propietario llevó a figuras como \hyperlink{stallman}{Richard Stallman} a iniciar un
+software propietario llevó a figuras como \hyperlink{richardstallman}{Richard Stallman} a iniciar un
 movimiento en defensa de la libertad del usuario. En 1985 fundó la Free Software
 Foundation y lanzó el proyecto \hyperlink{gnu}{GNU}, cuyo objetivo era construir un sistema
 operativo completamente libre, compatible con UNIX. Stallman consideraba el
@@ -346,9 +346,11 @@ operativo.
 
 Sus primeros experimentos fueron programados en ensamblador, logrando arrancar
 la máquina desde un disquete y ejecutar dos procesos, uno para la entrada desde
-el teclado y otro para la salida del módem, en sus propias palabras esto era ``un
-juego de prueba para entender cómo interactuar con el hardware". El siguiente
-desafío surgió cuando intentó descargar archivos de la universidad, necesitaba
+el teclado y otro para la salida del módem, en sus propias palabras esto era:
+\begin{quote}
+ \textbf{\textit{“un juego de prueba para entender cómo interactuar con el hardware”}}   
+\end{quote}
+El siguiente desafío surgió cuando intentó descargar archivos de la universidad, necesitaba
 un controlador de disco compatible con el sistema de archivos de MINIX. Tras
 semanas de trabajo logró un driver funcional dándose cuenta de que estaba 
 construyendo algo más grande que un solo emulador, estaba creando las bases de
@@ -395,10 +397,10 @@ Ante el torrente de contribuidores, organizados en listas de correo y servidores
 
 FTP, se estableció una estructura flexible:
 \begin{itemize}[label=$\bullet$, itemsep=0.5em]
-    \item \textbf{Linus Torvalds}: ``el General", revisaría y aceptaría los parches que
+    \item \textbf{Linus Torvalds}: ``el General'', revisaría y aceptaría los parches que
     cumplen los estándares de calidad y coherencia arquitectónica. 
     \item \textbf{Dave Miller}: responsable de la calidad, descartaría correcciones
-    innecesarias y envíaría a Linus solo las más pulidas.  
+    innecesarias y enviaría a Linus solo las más pulidas.  
     \item \textbf{Ted Ts’o}: principal promotor, se encargaría de las relaciones
     públicas y la difusión en conferencias y empresas.  
     \item \textbf{Alan Cox}: mano derecha de Linus, coordinaría grandes bloques de
@@ -420,7 +422,7 @@ ratificó Alan Cox:
 En enero de 1992, Linux adoptó la Licencia Pública General de GNU \hyperlink{gpl}{(GPLv2)}, un
 paso clave que aseguraba el \hyperlink{copyleft}{copyleft}: todo derivado debía permanecer libre y
 promover las mismas libertades de uso, estudio, modificación y redistribución. 
-Esta decisión, alineada con el proyecto NU de Richard Stallman, generó un
+Esta decisión, alineada con el proyecto GNU de Richard Stallman, generó un
 entorno de confianza para empresas y particulares, al impedir que versiones
 privativas del kernel excluyeran a la comunidad.
 
@@ -459,18 +461,20 @@ todos los equipos del TOP500 en supercomputación lo utilizan, aprovechando su
 escalabilidad y la 
 capacidad de tunear el kernel para arquitecturas masivamente paralelas.
 
-Con el tiempo incluso grandes empresas como \hyperlink{oracle}{Oracle}, \hyperlink{netscape}{Netscape}, Corel e \hyperlink{intel}{Intel},
-empezaron a prestar atención a las nuevas tendencias, y cada vez más a menudo
-consideraban a Linux como una alternativa real a Windows. Por ejemplo, IBM
-destinó alrededor de mil millones de dólares a la mejora adicional de Linux y,
-desde entonces, ha seguido siendo uno de sus principales “embajadores”.
+Con el tiempo incluso grandes empresas como \hyperlink{oracle}{Oracle},
+\hyperlink{netscape}{Netscape}, \hyperlink{corel}{Corel} e
+\hyperlink{intel}{Intel}, empezaron a prestar atención a las nuevas tendencias,
+y cada vez más a menudo consideraban a Linux como una alternativa real a
+Windows. Por ejemplo, IBM destinó alrededor de mil millones de dólares a la
+mejora adicional de Linux y, desde entonces, ha seguido siendo uno de sus
+principales “embajadores”.
 
 El éxito de Torvalds también sirvió de inspiración a otros, como la empresa
 Android, fundada en 2003 por Andy Ruben, Richie Miner, Nick Sears y Chris White.
 Tomando como base el núcleo de Linux, lo modificaron ligeramente y obtuvieron un
 nuevo sistema operativo para dispositivos móviles, que tiene en cuenta la
 geolocalización y la configuración personal de sus propietarios. Unos años 
-después Google compró Android llevando el kernel no solo al bolsillo de más de
+después \hyperlink{google}{Google} compró Android llevando el kernel no solo al bolsillo de más de
 3000 millones de usuarios, sino que amplió su presencia a tablets, televisores,
 relojes inteligentes, entre otros dispositivos. Paralelamente, proyectos como
 BusyBox, U-Boot, OpenWrt y Tizen demostraron la versatilidad de Linux en
@@ -487,11 +491,12 @@ distribuciones.
 Actualmente Linux es respaldado por la mayoría de las grandes empresas del
 sector, las que colaboran con su difusión ya sea trabajando en el núcleo,
 proporcionando soluciones de software o preinstalando el sistema operativo,
-algunas de ellas son: Intel, Google, \hyperlink{ibm}{IBM}, \hyperlink{amd}{AMD}, \hyperlink{valve}{Valve}, \hyperlink{dell}{Dell}, \hyperlink{lenovo}{Lenovo}, \hyperlink{asus}{Asus},
-Fujitsu, Oracle, entre muchas otras. De igual manera el apoyo de compañías de
-software también está presente, ya que, entre otras aplicaciones Java, Google
-Earth, Adobe Reader, Adobe Flash y Yahoo! Messenger están disponibles para
-Linux.  
+algunas de ellas son: Intel, Google, \hyperlink{ibm}{IBM}, \hyperlink{amd}{AMD},
+\hyperlink{valve}{Valve}, \hyperlink{dell}{Dell}, \hyperlink{lenovo}{Lenovo},
+\hyperlink{asus}{Asus}, Fujitsu, Oracle, entre muchas otras. De igual manera el
+apoyo de compañías de software también está presente, ya que, entre otras
+aplicaciones Java, Google Earth, Adobe Reader, Adobe Flash y Yahoo! Messenger
+están disponibles para Linux.  
 
 \subsection{El impacto económico de Linux}
 
@@ -500,9 +505,10 @@ empresas de software y cuantiosas ganancias a los desarrolladores, los cuales
 podían vender servicios de configuración de servidores para empresas, así como
 ayudar a mantener su funcionamiento. 
 
-Plataformas como Amazon Web Services (\hyperlink{aws}{AWS}), lanzada en 2006, se construyeron
-sobre Linux, permitiendo a startups acceder a infraestructura escalable a una
-fracción del costo tradicional. Compañías como \hyperlink{redhat}{Red Hat} y \hyperlink{canonical}{Canonical}, creadora de
+Plataformas como Amazon Web Services (\hyperlink{aws}{AWS}), lanzada en 2006, se
+construyeron sobre Linux, permitiendo a startups acceder a infraestructura
+escalable a una fracción del costo tradicional. Compañías como
+\hyperlink{redhat}{Red Hat} y \hyperlink{canonical}{Canonical}, creadora de
 Ubuntu, demostraron que el software libre podía ser rentable. Red Hat facturó
 miles de millones ofreciendo soporte técnico y certificaciones, no el código en
 sí. Este modelo inspiró a otras empresas, como Docker, que monetizaron servicios
@@ -529,8 +535,8 @@ Más allá del acceso al software, Linux ha cristalizado una cultura de
 colaboración global.  Eventos como FOSDEM, organizados por y para
 desarrolladores voluntarios, reúnen cada año a miles de asistentes en un espacio
 de aprendizaje abierto y gratuito. A su vez, grupos locales de usuarios,
-hackathons y conferencias regionales refuerzan el espíritu de solidaridad
-técnica: todos contribuyen, todos se benefician.
+\hyperlink{hackathon}{hackathons} y conferencias regionales refuerzan el
+espíritu de solidaridad técnica: todos contribuyen, todos se benefician.
 
 En el ámbito académico, Linux y las herramientas asociadas se han incorporado
 como pilares de la enseñanza en sistemas operativos, redes y desarrollo de
@@ -546,7 +552,7 @@ Estas soluciones han empoderado a ONG, administraciones locales y colectivos
 ciudadanos para desarrollar y adaptar sus propias herramientas sin depender de
 proveedores comerciales.
 
-La adopción de las ``cuatro libertades" (usar, estudiar, modificar y compartir)
+La adopción de las ``cuatro libertades'' (usar, estudiar, modificar y compartir)
 ha transformado al usuario pasivo en un co-creador activo de su entorno digital.
 Este cambio de rol impulsa movimientos de datos abiertos y transparencia
 gubernamental, promoviendo una ciudadanía digital capaz de auditar procesos,
@@ -567,9 +573,7 @@ pudiera utilizar en su propia computadora y, de paso, ayudar a otros
 estudiantes.
 
 Un aspecto fundamental de la organización inicial del proyecto fue su apertura
-al público desde el primer momento. Torvalds anunció su trabajo en un grupo de
-noticias del sistema operativo MINIX, invitando a otros usuarios a probar su
-sistema y a ofrecer comentarios. Esta transparencia y disposición a recibir
+al público desde el primer momento. Esta transparencia y disposición a recibir
 retroalimentación contrastaban fuertemente con los modelos de desarrollo
 tradicionales, que solían mantenerse en secreto durante sus fases tempranas.
 
@@ -682,13 +686,13 @@ Aunque Linus Torvalds valoraba su funcionalidad y había decidido adoptarlo,
 enfrentó una creciente oposición por parte del núcleo del equipo del kernel, que
 rechazaba depender de una herramienta propietaria.
 
-Sin embargo, la relación entre la comunidad del software libre y BitMover era
-tensa desde el inicio, por la misma naturaleza cerrada de BitKeeper. Aunque
-ofrecía licencias gratuitas para uso no comercial en proyectos de código
-abierto, esta concesión era frágil. En 2005, tras una serie de desacuerdos,
-BitMover decidió retirar el acceso libre a BitKeeper para los desarrolladores
-del kernel de Linux. Este evento dejó a la comunidad sin una herramienta viable
-para gestionar el desarrollo del proyecto.
+Sin embargo, la relación entre la comunidad del software libre y BitMover
+(empresa dueña de BitKeeper) era tensa desde el inicio, por la misma naturaleza
+cerrada de BitKeeper. Aunque ofrecía licencias gratuitas para uso no comercial
+en proyectos de código abierto, esta concesión era frágil. En 2005, tras una
+serie de desacuerdos, BitMover decidió retirar el acceso libre a BitKeeper para
+los desarrolladores del kernel de Linux. Este evento dejó a la comunidad sin una
+herramienta viable para gestionar el desarrollo del proyecto.
 
 Ante la retirada de la licencia gratuita por parte de BitMover y la presión
 interna, Torvalds —a pesar de no querer realmente hacerlo— tomó la decisión de
@@ -848,6 +852,10 @@ accidental revolutionary}, 1. HarperBusiness paperback ed., Harper, New York,
 procesadores y tecnologías relacionadas, competidor directo de Intel.
 \label{amd}
 
+\item \hypertarget{apache}{\textbf{Apache:}} Fundación de software sin fines de
+lucro que desarrolla y mantiene una amplia gama de proyectos de software de
+código abierto.
+
 \item \hypertarget{apple}{\textbf{Apple:}} Empresa conocida por computadoras
 Macintosh y dispositivos como el iPhone. En los 90, usó variantes de UNIX en sus
 sistemas y luego desarrolló macOS, basado en BSD.  \label{apple}
@@ -902,6 +910,10 @@ CorelDRAW y otros productos de diseño gráfico.  \label{corel}
 \item \hypertarget{copyleft}{\textbf{Copyleft:}} Filosofía legal que asegura que
 las obras derivadas mantengan libertades de uso.  \label{copyleft}
 
+\item \hypertarget{corel}{\textbf{Corel:}} Empresa de software canadiense
+conocida por sus aplicaciones de diseño gráfico y edición de imágenes, como
+CorelDRAW y Corel PaintShop Pro.
+
 \item \hypertarget{cpm}{\textbf{CP/M (Control Program for Microcomputers):}}
 Sistema operativo de 8 bits, precursor de MS-DOS.  \label{cpm}
 
@@ -933,12 +945,22 @@ alojar y colaborar en proyectos de software.  \label{github}
 \item \hypertarget{gnu}{\textbf{GNU (GNU's Not UNIX):}} Proyecto para crear un
 sistema operativo libre compatible con UNIX.  \label{gnu}
 
+\item \hypertarget{google}{\textbf{Google:}} Multinacional tecnológica líder en
+servicios de búsqueda, publicidad y computación en la nube.
+
 \item \hypertarget{gpl}{\textbf{GPL (Licencia Pública General):}} Licencia
 copyleft que garantiza libertad de uso, modificación y distribución.
 \label{gpl}
 
-\item \hypertarget{ibm}{\textbf{IBM (International Business Machines):}} Pionera
-en tecnología. Desarrolló mainframes como el OS/360.  \label{ibm}
+\item \hypertarget{hackathon}{\textbf{Hackathon:}} Evento colaborativo donde
+programadores, diseñadores y entusiastas de la tecnología se reúnen para
+desarrollar soluciones innovadoras en un corto período de tiempo, fomentando la
+creatividad y el trabajo en equipo.
+
+\item \hypertarget{ibm}{\textbf{IBM (International Business Machines):}} Empresa
+pionera en tecnología, creadora de mainframes como el OS/360. Contribuyó al
+desarrollo de estándares en computación corporativa y más tarde apoyó el código
+abierto, incluyendo Linux.
 
 \item \hypertarget{intel}{\textbf{Intel:}} Fabricante líder de procesadores para
 computadoras personales.  \label{intel}
@@ -974,6 +996,10 @@ MS-DOS. Representa el modelo de software propietario.  \label{microsoft}
 
 \item \hypertarget{msdos}{\textbf{MS-DOS (Microsoft Disk Operating System):}}
 Sistema operativo dominante en los 80, precursor de Windows.  \label{msdos}
+
+\item \hypertarget{mysql}{\textbf{MySQL:}} Sistema de gestión de bases de datos
+relacional de código abierto, ampliamente utilizado para el almacenamiento y
+manejo de datos. 
 
 \item \hypertarget{netscape}{\textbf{Netscape:}} Navegador popular en los 90. Su
 liberación como código abierto dio origen a Mozilla Firefox.  \label{netscape}
@@ -1032,7 +1058,9 @@ Steam, impulsó el uso de Linux en el gaming.  \label{valve}
 
 \item \hypertarget{web2}{\textbf{Web 2.0:}} Segunda generación de la web
 centrada en la interacción del usuario y contenido generado por comunidades.
-\label{web2} \end{itemize}
+\label{web2} 
+
+\end{itemize}
 
 
 \end{document}
