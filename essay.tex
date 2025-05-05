@@ -13,7 +13,10 @@
 \usepackage{enumitem}
 \usepackage{pdfpages}
 \usepackage{xcolor} % Para definir colores
+\usepackage[numbers]{natbib}
+% \usepackage{cite}
 \usepackage[colorlinks=true, linkcolor=black, urlcolor=red, citecolor=red]{hyperref}
+\bibliographystyle{plain} 
 
 
 \pagestyle{fancy}
@@ -52,7 +55,7 @@
    \thispagestyle{empty} 
 \end{titlepage}
 
-\renewcommand{\refname}{Bibliografía y Anexos}
+% \renewcommand{\refname}{Bibliografía y Anexos}
 
 
 
@@ -350,7 +353,7 @@ operativo.
 
 Sus primeros experimentos fueron programados en ensamblador, logrando arrancar
 la máquina desde un disquete y ejecutar dos procesos, uno para la entrada desde
-el teclado y otro para la salida del módem, en sus propias palabras esto era:
+el teclado y otro para la salida del módem, en sus propias palabras \cite{torvalds_just_2002} esto era:
 \begin{quote}
  \textbf{\textit{“un juego de prueba para entender cómo interactuar con el hardware”}}   
 \end{quote}
@@ -367,7 +370,7 @@ compilador \hyperlink{gcc}{GCC} y herramientas para gestionar procesos y memoria
 esta manera a la comunidad de usuarios de MINIX a probar, criticar y aportar
 sugerencias. Aunque limitado, este lanzamiento sentó las bases de un modelo de
 desarrollo revolucionario, sobre su decisión de compartir el código de forma
-abierta Torlavds dijo:
+abierta Torlavds \cite{torvalds_just_2002} dijo:
 
 \begin{quote}
     \textbf{\textit{“Si hubiera hecho Linux de pago, nadie lo habría
@@ -413,7 +416,7 @@ FTP, se estableció una estructura flexible:
 
 Esta gobernanza plana garantizó que cada desarrollador tuviera voz, pero siempre
 bajo la garantía de que Torvalds y su equipo tomarían la decisión final, como
-ratificó Alan Cox:
+ratificó Alan Cox \cite{torvalds_just_2002}:
 
 \begin{quote}
     \textbf{\textit{“No queríamos guerras de ego; si alguien proponía una mejora válida, se
@@ -701,7 +704,7 @@ herramienta viable para gestionar el desarrollo del proyecto.
 Ante la retirada de la licencia gratuita por parte de BitMover y la presión
 interna, Torvalds —a pesar de no querer realmente hacerlo— tomó la decisión de
 crear su propia herramienta. En apenas dos semanas, desarrolló y lanzó Git, al
-que describió con humor como 
+que describió con humor \cite{torvalds_just_2002} como 
 \begin{quote}
 \textbf{``el estúpido rastreador de contenidos"}
 \end{quote}
@@ -822,36 +825,14 @@ democratizando el acceso a la tecnología, fomentando la colaboración global y
 empoderando a los usuarios como co-creadores de su entorno digital.
 Podemos decir sin ninguna duda que su trabajo ha sentado un precedente
 fundamental que continúa moldeando el futuro de la tecnología, impulsando la
-innovación abierta y la construcción colectiva del conocimiento digital.
-
+innovación abierta y la construcción colectiva del conocimiento digital. 
 
 \newpage
+\section{Bibliografía y Anexos}
+\nocite{*}
+\renewcommand{\refname}{}  
+\bibliography{bibliography}    % nombre de tu .bib (sin extensión)
 
-\begin{thebibliography}{9}
-
-\bibitem{mochi_aleman_movimiento_2015}
-Mochi Alemán, Prudencio Óscar, \textit{El movimiento del software libre},
-Revista Mexicana de Ciencias Políticas y Sociales, vol. 45, no. 185, 2015.
-
-\bibitem{stallman_free_2002}
-Stallman, Richard y Stallman, Richard M., \textit{Free software, free society:
-selected essays}, 1st ed., Free Software Foundation, Boston, Mass, 2002. ISBN:
-978-1-882114-98-6.
-
-\bibitem{campbell-kelly_computer_1996}
-Campbell-Kelly, Martin y Aspray, William, \textit{Computer: a history of the
-information machine}, BasicBooks, New York, 1996. ISBN: 978-0-465-02989-1.
-
-\bibitem{torvalds_just_2002}
-Torvalds, Linus y Diamond, David, \textit{Just for fun: the story of an
-accidental revolutionary}, 1. HarperBusiness paperback ed., Harper, New York,
-2002. ISBN: 978-0-06-662073-2.
-
-\bibitem{gutierrez_pensar_2021}
-Gutierrez Reto, Matias, \textit{Piensa Abierto: Una historia social del software
-de Código Abierto y Libre}, 1st ed., [s.n.], [s.l.], 2021. ISBN: 979-8463215178.
-
-\end{thebibliography}
 \newpage
 
 \subsection*{Definiciones de algunos términos} 
@@ -1069,7 +1050,6 @@ centrada en la interacción del usuario y contenido generado por comunidades.
 \label{web2} 
 
 \end{itemize}
-
 
 \end{document}
 
